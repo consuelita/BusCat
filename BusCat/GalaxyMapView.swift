@@ -11,15 +11,35 @@ import SwiftUI
 
 struct GalaxyMapView: View {
     var body: some View {
-        VStack {
-            if let image = NSImage(named: NSImage.Name("GalaxyMap2"))
+        ZStack
+        {
+            Button(action: self.orbitClicked)
             {
-                Image(nsImage: image)
+                if let image = NSImage(named: NSImage.Name("orbit"))
+                {
+                    Image(nsImage: image)
+                }
+                else
+                {
+                    Text("No Image")
+                }
             }
-//                .imageScale(.large)
-//                .foregroundColor(.accentColor)
+
+            VStack {
+                if let image = NSImage(named: NSImage.Name("GalaxyMap2"))
+                {
+                    Image(nsImage: image)
+                }
+                //                .imageScale(.large)
+                //                .foregroundColor(.accentColor)
+            }
+            .padding()
         }
-        .padding()
+    }
+
+    func orbitClicked()
+    {
+        print("orbit clicked!")
     }
 }
 
