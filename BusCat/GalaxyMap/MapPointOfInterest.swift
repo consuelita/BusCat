@@ -10,41 +10,17 @@ import SwiftUI
 struct MapPointOfInterest: View
 {
     @EnvironmentObject var navigation: GameNavigation
-    @State var type: PointOfInterestType
-    @State var x: Double
-    @State var y: Double
+    @State var waypoint: Waypoint
 
     var body: some View
     {
-        switch $type.wrappedValue
+        Button(action: self.starClicked)
         {
-            case .star:
-                Button(action: self.starClicked)
-                {
-                    Image(systemName: "star")
-                    .foregroundColor(.red)
-                }
-                .position(CGPoint(x: self.x, y: self.y))
-                .buttonStyle(.plain)
-
-            case .planet:
-                Button(action: self.planetClicked)
-                {
-                    Image(systemName: "globe")
-                        .foregroundColor(.blue)
-                }
-                .position(CGPoint(x: self.x, y: self.y))
-                .buttonStyle(.plain)
-
-            case .anomaly:
-                Button(action: self.anomalyClicked)
-                {
-                    Image(systemName: "questionmark.circle.fill")
-                        .foregroundColor(.purple)
-                }
-                .position(CGPoint(x: self.x, y: self.y))
-                .buttonStyle(.plain)
+            Image(systemName: $waypoint.type.wrappedValue.rawValue)
+            .foregroundColor($waypoint.color.wrappedValue)
         }
+        .position(CGPoint(x: $waypoint.x.wrappedValue, y: $waypoint.y.wrappedValue))
+        .buttonStyle(.plain)
     }
 
     func starClicked()
@@ -73,6 +49,7 @@ struct MapPointOfInterest_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        MapPointOfInterest(type: .anomaly, x: 300, y: 300)
+        let waypoint = Waypoint(type: .star, color: .red, x: 335, y: 337, scene: .none)
+        MapPointOfInterest(waypoint: waypoint)
     }
 }

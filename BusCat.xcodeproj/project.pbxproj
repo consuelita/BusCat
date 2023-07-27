@@ -21,6 +21,8 @@
 		DAEACEA62A72111700D5D587 /* GameNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA52A72111700D5D587 /* GameNavigation.swift */; };
 		DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA82A72145000D5D587 /* SceneView.swift */; };
 		DAEACEAB2A721AB800D5D587 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAA2A721AB800D5D587 /* SceneType.swift */; };
+		DAEACEAE2A731B1C00D5D587 /* Galaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */; };
+		DAEACEB02A731B4A00D5D587 /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAF2A731B4A00D5D587 /* Waypoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		DAEACEA52A72111700D5D587 /* GameNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNavigation.swift; sourceTree = "<group>"; };
 		DAEACEA82A72145000D5D587 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		DAEACEAA2A721AB800D5D587 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
+		DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galaxy.swift; sourceTree = "<group>"; };
+		DAEACEAF2A731B4A00D5D587 /* Waypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		AE6F112A2A71EEB300F9DCC2 /* BusCat */ = {
 			isa = PBXGroup;
 			children = (
+				DAEACEAC2A731B1000D5D587 /* Models */,
 				DAEACEA22A72102600D5D587 /* MainScreen */,
 				DAEACE9D2A7209DA00D5D587 /* GalaxyMap */,
 				DAEACEA72A72140600D5D587 /* Scene */,
@@ -150,7 +155,6 @@
 			children = (
 				DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */,
 				DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */,
-				DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */,
 			);
 			path = GalaxyMap;
 			sourceTree = "<group>";
@@ -169,9 +173,19 @@
 			isa = PBXGroup;
 			children = (
 				DAEACEA82A72145000D5D587 /* SceneView.swift */,
-				DAEACEAA2A721AB800D5D587 /* SceneType.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		DAEACEAC2A731B1000D5D587 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */,
+				DAEACEAF2A731B4A00D5D587 /* Waypoint.swift */,
+				DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */,
+				DAEACEAA2A721AB800D5D587 /* SceneType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,7 +320,9 @@
 			files = (
 				DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */,
 				AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */,
+				DAEACEB02A731B4A00D5D587 /* Waypoint.swift in Sources */,
 				DAEACEA12A72100100D5D587 /* MainScreenView.swift in Sources */,
+				DAEACEAE2A731B1C00D5D587 /* Galaxy.swift in Sources */,
 				DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */,
 				DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */,
 				DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */,

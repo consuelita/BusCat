@@ -10,26 +10,37 @@ import Foundation
 import SwiftUI
 
 struct GalaxyMapView: View {
+    @State var galaxy: Galaxy
+
     var body: some View {
         ZStack
         {
             VStack {
-                if let image = NSImage(named: NSImage.Name("GalaxyMap2"))
+                if let image = NSImage(named: NSImage.Name($galaxy.map.wrappedValue))
                 {
                     Image(nsImage: image)
                 }
             }
             .padding()
 
-            MapPointOfInterest(type: .star, x: 335, y: 337)
-            MapPointOfInterest(type: .planet, x: 465, y: 500)
-            MapPointOfInterest(type: .anomaly, x: 665, y: 410)
+            ForEach($galaxy.waypoints.wrappedValue)
+            {
+                waypoint in
+
+                MapPointOfInterest(waypoint: waypoint)
+            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GalaxyMapView()
+        let galaxy = Galaxy(map: "GalaxyMap2", waypoints: [
+            Waypoint(type: .star, color: .red, x: 335, y: 337, scene: .none),
+            Waypoint(type: .planet, color: .blue, x: 465, y: 500, scene: .nature),
+            Waypoint(type: .anomaly, color: .purple, x: 665, y: 410, scene: .anomaly),
+        ])
+
+        GalaxyMapView(galaxy: galaxy)
     }
 }

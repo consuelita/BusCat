@@ -13,31 +13,45 @@ struct SceneView: View
 
     var body: some View
     {
-        ZStack
+        VStack
         {
-            VStack {
-                switch $type.wrappedValue
+            Text("Environmental Actions")
+
+            HStack
+            {
+                Text("Character Abilities")
+
+                ZStack
                 {
-                    case .nature:
-                        if let image = NSImage(named: NSImage.Name("NatureScene"))
+                    VStack {
+                        switch $type.wrappedValue
                         {
-                            Image(nsImage: image)
-                        }
+                            case .nature:
+                                if let image = NSImage(named: NSImage.Name("NatureScene"))
+                                {
+                                    Image(nsImage: image)
+                                }
 
-                    case .anomaly:
-                        if let image = NSImage(named: NSImage.Name("AnomalyPlanetRainbow"))
-                        {
-                            Image(nsImage: image)
-                        }
+                            case .anomaly:
+                                if let image = NSImage(named: NSImage.Name("AnomalyPlanetRainbow"))
+                                {
+                                    Image(nsImage: image)
+                                }
 
-                    case .none:
-                        if let image = NSImage(named: NSImage.Name("Space"))
-                        {
-                            Image(nsImage: image)
+                            case .none:
+                                if let image = NSImage(named: NSImage.Name("Space"))
+                                {
+                                    Image(nsImage: image)
+                                }
                         }
+                    }
+                    .padding()
                 }
+
+                Text("Status Effects")
             }
-            .padding()
+
+            Text("Inventory Items")
         }
     }
 }
