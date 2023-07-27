@@ -12,10 +12,12 @@ import SwiftUI
 struct GalaxyMapView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if let image = NSImage(named: NSImage.Name("GalaxyMap2"))
+            {
+                Image(nsImage: image)
+            }
+//                .imageScale(.large)
+//                .foregroundColor(.accentColor)
         }
         .padding()
     }
