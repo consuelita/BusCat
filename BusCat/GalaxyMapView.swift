@@ -13,18 +13,6 @@ struct GalaxyMapView: View {
     var body: some View {
         ZStack
         {
-            Button(action: self.orbitClicked)
-            {
-                if let image = NSImage(named: NSImage.Name("orbit"))
-                {
-                    Image(nsImage: image)
-                }
-                else
-                {
-                    Text("No Image")
-                }
-            }
-
             VStack {
                 if let image = NSImage(named: NSImage.Name("GalaxyMap2"))
                 {
@@ -34,6 +22,11 @@ struct GalaxyMapView: View {
                 //                .foregroundColor(.accentColor)
             }
             .padding()
+            
+            Button(action: self.orbitClicked)
+            {
+                Image(systemName: "star")
+            }
         }
     }
 
