@@ -1,13 +1,15 @@
 //
-//  ContentView.swift
+//  GalaxyMapView.swift
 //  BusCat
 //
-//  Created by Mafalda on 7/26/23.
+//  Created by Dr. Brandon Wiley on 7/26/23.
 //
+
+import Foundation
 
 import SwiftUI
 
-struct ContentView: View {
+struct GalaxyMapView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,6 +23,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GalaxyMapView()
     }
 }

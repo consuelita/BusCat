@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F112B2A71EEB300F9DCC2 /* BusCatApp.swift */; };
-		AE6F112E2A71EEB300F9DCC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F112D2A71EEB300F9DCC2 /* ContentView.swift */; };
 		AE6F11302A71EEB300F9DCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6F112F2A71EEB300F9DCC2 /* Assets.xcassets */; };
 		AE6F11332A71EEB300F9DCC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6F11322A71EEB300F9DCC2 /* Preview Assets.xcassets */; };
 		AE6F113E2A71EEB400F9DCC2 /* BusCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F113D2A71EEB400F9DCC2 /* BusCatTests.swift */; };
 		AE6F11482A71EEB400F9DCC2 /* BusCatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F11472A71EEB400F9DCC2 /* BusCatUITests.swift */; };
 		AE6F114A2A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */; };
+		DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		AE6F11282A71EEB300F9DCC2 /* BusCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6F112B2A71EEB300F9DCC2 /* BusCatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCatApp.swift; sourceTree = "<group>"; };
-		AE6F112D2A71EEB300F9DCC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE6F112F2A71EEB300F9DCC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6F11322A71EEB300F9DCC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE6F11342A71EEB300F9DCC2 /* BusCat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BusCat.entitlements; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		AE6F11432A71EEB400F9DCC2 /* BusCatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusCatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6F11472A71EEB400F9DCC2 /* BusCatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCatUITests.swift; sourceTree = "<group>"; };
 		AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6F112B2A71EEB300F9DCC2 /* BusCatApp.swift */,
-				AE6F112D2A71EEB300F9DCC2 /* ContentView.swift */,
+				DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */,
 				AE6F112F2A71EEB300F9DCC2 /* Assets.xcassets */,
 				AE6F11342A71EEB300F9DCC2 /* BusCat.entitlements */,
 				AE6F11312A71EEB300F9DCC2 /* Preview Content */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE6F112E2A71EEB300F9DCC2 /* ContentView.swift in Sources */,
+				DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */,
 				AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +420,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BusCat/Preview Content\"";
-				DEVELOPMENT_TEAM = FR7LB94RGE;
+				DEVELOPMENT_TEAM = E3FYURAR8H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -447,7 +447,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BusCat/Preview Content\"";
-				DEVELOPMENT_TEAM = FR7LB94RGE;
+				DEVELOPMENT_TEAM = E3FYURAR8H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
