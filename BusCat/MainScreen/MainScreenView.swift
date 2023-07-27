@@ -21,7 +21,7 @@ struct MainScreenView: View
                     GalaxyMapView()
 
                 case .scene:
-                    SceneView()
+                    SceneView(type: $navigation.sceneType.wrappedValue)
             }
         }
         .environmentObject(navigation)

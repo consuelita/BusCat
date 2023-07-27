@@ -19,7 +19,7 @@ struct MapPointOfInterest: View
         switch $type.wrappedValue
         {
             case .star:
-                Button(action: self.waypointClicked)
+                Button(action: self.starClicked)
                 {
                     Image(systemName: "star")
                     .foregroundColor(.red)
@@ -28,7 +28,7 @@ struct MapPointOfInterest: View
                 .buttonStyle(.plain)
 
             case .planet:
-                Button(action: self.waypointClicked)
+                Button(action: self.planetClicked)
                 {
                     Image(systemName: "globe")
                         .foregroundColor(.blue)
@@ -37,7 +37,7 @@ struct MapPointOfInterest: View
                 .buttonStyle(.plain)
 
             case .anomaly:
-                Button(action: self.waypointClicked)
+                Button(action: self.anomalyClicked)
                 {
                     Image(systemName: "questionmark.circle.fill")
                         .foregroundColor(.purple)
@@ -47,9 +47,24 @@ struct MapPointOfInterest: View
         }
     }
 
-    func waypointClicked()
+    func starClicked()
     {
-        print("Clicked, changing to scene")
+        print("Clicked star, changing to scene")
+        navigation.sceneType = .none
+        navigation.currentView = .scene
+    }
+
+    func planetClicked()
+    {
+        print("Clicked planet, changing to scene")
+        navigation.sceneType = .nature
+        navigation.currentView = .scene
+    }
+
+    func anomalyClicked()
+    {
+        print("Clicked anomaly, changing to scene")
+        navigation.sceneType = .anomaly
         navigation.currentView = .scene
     }
 }

@@ -20,6 +20,7 @@
 		DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA32A72104300D5D587 /* MainViewSetting.swift */; };
 		DAEACEA62A72111700D5D587 /* GameNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA52A72111700D5D587 /* GameNavigation.swift */; };
 		DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA82A72145000D5D587 /* SceneView.swift */; };
+		DAEACEAB2A721AB800D5D587 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAA2A721AB800D5D587 /* SceneType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DAEACEA32A72104300D5D587 /* MainViewSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSetting.swift; sourceTree = "<group>"; };
 		DAEACEA52A72111700D5D587 /* GameNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNavigation.swift; sourceTree = "<group>"; };
 		DAEACEA82A72145000D5D587 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		DAEACEAA2A721AB800D5D587 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				DAEACEA82A72145000D5D587 /* SceneView.swift */,
+				DAEACEAA2A721AB800D5D587 /* SceneType.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */,
 				DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */,
 				DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */,
+				DAEACEAB2A721AB800D5D587 /* SceneType.swift in Sources */,
 				DAEACEA62A72111700D5D587 /* GameNavigation.swift in Sources */,
 				DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */,
 			);

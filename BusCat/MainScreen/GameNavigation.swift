@@ -11,9 +11,11 @@ import SwiftUI
 public class GameNavigation: ObservableObject
 {
     @Published public var currentView: MainViewSetting
+    @Published public var sceneType: SceneType
 
     public init()
     {
         self.currentView = .galaxyMap
+        self.sceneType = .none
     }
 }
