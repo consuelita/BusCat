@@ -14,6 +14,12 @@
 		AE6F11482A71EEB400F9DCC2 /* BusCatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F11472A71EEB400F9DCC2 /* BusCatUITests.swift */; };
 		AE6F114A2A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */; };
 		DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */; };
+		DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */; };
+		DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */; };
+		DAEACEA12A72100100D5D587 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA02A72100100D5D587 /* MainScreenView.swift */; };
+		DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA32A72104300D5D587 /* MainViewSetting.swift */; };
+		DAEACEA62A72111700D5D587 /* GameNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA52A72111700D5D587 /* GameNavigation.swift */; };
+		DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA82A72145000D5D587 /* SceneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		AE6F11472A71EEB400F9DCC2 /* BusCatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCatUITests.swift; sourceTree = "<group>"; };
 		AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyMapView.swift; sourceTree = "<group>"; };
+		DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointOfInterest.swift; sourceTree = "<group>"; };
+		DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestType.swift; sourceTree = "<group>"; };
+		DAEACEA02A72100100D5D587 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		DAEACEA32A72104300D5D587 /* MainViewSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSetting.swift; sourceTree = "<group>"; };
+		DAEACEA52A72111700D5D587 /* GameNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNavigation.swift; sourceTree = "<group>"; };
+		DAEACEA82A72145000D5D587 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +107,10 @@
 		AE6F112A2A71EEB300F9DCC2 /* BusCat */ = {
 			isa = PBXGroup;
 			children = (
+				DAEACEA22A72102600D5D587 /* MainScreen */,
+				DAEACE9D2A7209DA00D5D587 /* GalaxyMap */,
+				DAEACEA72A72140600D5D587 /* Scene */,
 				AE6F112B2A71EEB300F9DCC2 /* BusCatApp.swift */,
-				DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */,
 				AE6F112F2A71EEB300F9DCC2 /* Assets.xcassets */,
 				AE6F11342A71EEB300F9DCC2 /* BusCat.entitlements */,
 				AE6F11312A71EEB300F9DCC2 /* Preview Content */,
@@ -127,6 +141,34 @@
 				AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */,
 			);
 			path = BusCatUITests;
+			sourceTree = "<group>";
+		};
+		DAEACE9D2A7209DA00D5D587 /* GalaxyMap */ = {
+			isa = PBXGroup;
+			children = (
+				DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */,
+				DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */,
+				DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */,
+			);
+			path = GalaxyMap;
+			sourceTree = "<group>";
+		};
+		DAEACEA22A72102600D5D587 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DAEACEA02A72100100D5D587 /* MainScreenView.swift */,
+				DAEACEA52A72111700D5D587 /* GameNavigation.swift */,
+				DAEACEA32A72104300D5D587 /* MainViewSetting.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		DAEACEA72A72140600D5D587 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DAEACEA82A72145000D5D587 /* SceneView.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +303,12 @@
 			files = (
 				DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */,
 				AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */,
+				DAEACEA12A72100100D5D587 /* MainScreenView.swift in Sources */,
+				DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */,
+				DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */,
+				DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */,
+				DAEACEA62A72111700D5D587 /* GameNavigation.swift in Sources */,
+				DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

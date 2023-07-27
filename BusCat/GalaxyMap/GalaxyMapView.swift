@@ -18,21 +18,13 @@ struct GalaxyMapView: View {
                 {
                     Image(nsImage: image)
                 }
-                //                .imageScale(.large)
-                //                .foregroundColor(.accentColor)
             }
             .padding()
-            
-            Button(action: self.orbitClicked)
-            {
-                Image(systemName: "star")
-            }
-        }
-    }
 
-    func orbitClicked()
-    {
-        print("orbit clicked!")
+            MapPointOfInterest(type: .star, x: 335, y: 337)
+            MapPointOfInterest(type: .planet, x: 465, y: 500)
+            MapPointOfInterest(type: .anomaly, x: 665, y: 410)
+        }
     }
 }
 
