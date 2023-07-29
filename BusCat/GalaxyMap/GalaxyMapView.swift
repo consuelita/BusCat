@@ -30,6 +30,7 @@ struct GalaxyMapView: View {
                 MapPointOfInterest(waypoint: waypoint)
             }
         }
+        .frame(width: 1024, height: 1024)
     }
 }
 

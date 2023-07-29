@@ -10,16 +10,20 @@ import SwiftUI
 struct SceneView: View
 {
     @State var type: SceneType
+    @State var selection: Int = 0
+    @EnvironmentObject var navigtion: GameNavigation
 
     var body: some View
     {
         VStack
         {
-            Text("Environmental Actions")
+            HorizontalActionBar(actions: ActionCollections.top)
+            .padding(.top, 10)
 
             HStack
             {
-                Text("Character Abilities")
+//                VerticalActionBar(actions: ActionCollections.left)
+//                .padding(.right, 10)
 
                 ZStack
                 {
@@ -51,8 +55,20 @@ struct SceneView: View
                 Text("Status Effects")
             }
 
-            Text("Inventory Items")
+            // Inventory
+            HorizontalActionBar(actions: ActionCollections.bottom)
+            .padding(.bottom, 10)
         }
+    }
+
+    func mapClicked()
+    {
+        self.navigtion.currentView = .galaxyMap
+    }
+
+    func takeAction()
+    {
+        print("action clicked")
     }
 }
 

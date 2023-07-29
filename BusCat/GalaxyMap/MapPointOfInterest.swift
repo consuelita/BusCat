@@ -14,7 +14,7 @@ struct MapPointOfInterest: View
 
     var body: some View
     {
-        Button(action: self.starClicked)
+        Button(action: self.clicked)
         {
             Image(systemName: $waypoint.type.wrappedValue.rawValue)
             .foregroundColor($waypoint.color.wrappedValue)
@@ -23,24 +23,10 @@ struct MapPointOfInterest: View
         .buttonStyle(.plain)
     }
 
-    func starClicked()
+    func clicked()
     {
-        print("Clicked star, changing to scene")
-        navigation.sceneType = .none
-        navigation.currentView = .scene
-    }
-
-    func planetClicked()
-    {
-        print("Clicked planet, changing to scene")
-        navigation.sceneType = .nature
-        navigation.currentView = .scene
-    }
-
-    func anomalyClicked()
-    {
-        print("Clicked anomaly, changing to scene")
-        navigation.sceneType = .anomaly
+        print("Clicked waypoint, changing to scene")
+        navigation.sceneType = $waypoint.scene.wrappedValue
         navigation.currentView = .scene
     }
 }

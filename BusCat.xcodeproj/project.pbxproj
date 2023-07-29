@@ -23,6 +23,13 @@
 		DAEACEAB2A721AB800D5D587 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAA2A721AB800D5D587 /* SceneType.swift */; };
 		DAEACEAE2A731B1C00D5D587 /* Galaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */; };
 		DAEACEB02A731B4A00D5D587 /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAF2A731B4A00D5D587 /* Waypoint.swift */; };
+		DAEACEB32A734C1B00D5D587 /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = DAEACEB22A734C1B00D5D587 /* Grid */; };
+		DAEACEB52A734D0D00D5D587 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEB42A734D0D00D5D587 /* GridCell.swift */; };
+		DAEACEB72A759AD800D5D587 /* HorizontalActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEB62A759AD800D5D587 /* HorizontalActionBar.swift */; };
+		DAEACEB92A759B2B00D5D587 /* ActionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEB82A759B2B00D5D587 /* ActionCollection.swift */; };
+		DAEACEBB2A759BCD00D5D587 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEBA2A759BCD00D5D587 /* Action.swift */; };
+		DAEACEBE2A75A2C800D5D587 /* ActionCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEBD2A75A2C800D5D587 /* ActionCollections.swift */; };
+		DAEACEC02A75A8FD00D5D587 /* VerticalActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEBF2A75A8FD00D5D587 /* VerticalActionBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,12 @@
 		DAEACEAA2A721AB800D5D587 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
 		DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galaxy.swift; sourceTree = "<group>"; };
 		DAEACEAF2A731B4A00D5D587 /* Waypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
+		DAEACEB42A734D0D00D5D587 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		DAEACEB62A759AD800D5D587 /* HorizontalActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalActionBar.swift; sourceTree = "<group>"; };
+		DAEACEB82A759B2B00D5D587 /* ActionCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCollection.swift; sourceTree = "<group>"; };
+		DAEACEBA2A759BCD00D5D587 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		DAEACEBD2A75A2C800D5D587 /* ActionCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCollections.swift; sourceTree = "<group>"; };
+		DAEACEBF2A75A8FD00D5D587 /* VerticalActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalActionBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEACEB32A734C1B00D5D587 /* Grid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +127,7 @@
 		AE6F112A2A71EEB300F9DCC2 /* BusCat */ = {
 			isa = PBXGroup;
 			children = (
+				DAEACEBC2A759D2700D5D587 /* Actions */,
 				DAEACEAC2A731B1000D5D587 /* Models */,
 				DAEACEA22A72102600D5D587 /* MainScreen */,
 				DAEACE9D2A7209DA00D5D587 /* GalaxyMap */,
@@ -173,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				DAEACEA82A72145000D5D587 /* SceneView.swift */,
+				DAEACEB62A759AD800D5D587 /* HorizontalActionBar.swift */,
+				DAEACEBF2A75A8FD00D5D587 /* VerticalActionBar.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -184,8 +201,19 @@
 				DAEACEAF2A731B4A00D5D587 /* Waypoint.swift */,
 				DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */,
 				DAEACEAA2A721AB800D5D587 /* SceneType.swift */,
+				DAEACEB42A734D0D00D5D587 /* GridCell.swift */,
+				DAEACEB82A759B2B00D5D587 /* ActionCollection.swift */,
+				DAEACEBA2A759BCD00D5D587 /* Action.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DAEACEBC2A759D2700D5D587 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				DAEACEBD2A75A2C800D5D587 /* ActionCollections.swift */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +232,9 @@
 			dependencies = (
 			);
 			name = BusCat;
+			packageProductDependencies = (
+				DAEACEB22A734C1B00D5D587 /* Grid */,
+			);
 			productName = BusCat;
 			productReference = AE6F11282A71EEB300F9DCC2 /* BusCat.app */;
 			productType = "com.apple.product-type.application";
@@ -276,6 +307,9 @@
 				Base,
 			);
 			mainGroup = AE6F111F2A71EEB200F9DCC2;
+			packageReferences = (
+				DAEACEB12A734C1B00D5D587 /* XCRemoteSwiftPackageReference "swiftui-grid" */,
+			);
 			productRefGroup = AE6F11292A71EEB300F9DCC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,15 +354,21 @@
 			files = (
 				DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */,
 				AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */,
+				DAEACEC02A75A8FD00D5D587 /* VerticalActionBar.swift in Sources */,
 				DAEACEB02A731B4A00D5D587 /* Waypoint.swift in Sources */,
 				DAEACEA12A72100100D5D587 /* MainScreenView.swift in Sources */,
 				DAEACEAE2A731B1C00D5D587 /* Galaxy.swift in Sources */,
 				DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */,
 				DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */,
+				DAEACEB72A759AD800D5D587 /* HorizontalActionBar.swift in Sources */,
 				DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */,
 				DAEACEAB2A721AB800D5D587 /* SceneType.swift in Sources */,
 				DAEACEA62A72111700D5D587 /* GameNavigation.swift in Sources */,
 				DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */,
+				DAEACEB52A734D0D00D5D587 /* GridCell.swift in Sources */,
+				DAEACEBB2A759BCD00D5D587 /* Action.swift in Sources */,
+				DAEACEB92A759B2B00D5D587 /* ActionCollection.swift in Sources */,
+				DAEACEBE2A75A2C800D5D587 /* ActionCollections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +684,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAEACEB12A734C1B00D5D587 /* XCRemoteSwiftPackageReference "swiftui-grid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-grid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAEACEB22A734C1B00D5D587 /* Grid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAEACEB12A734C1B00D5D587 /* XCRemoteSwiftPackageReference "swiftui-grid" */;
+			productName = Grid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AE6F11202A71EEB200F9DCC2 /* Project object */;
 }
