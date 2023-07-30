@@ -38,6 +38,7 @@ struct HorizontalActionBar: View
                 .border(.gray, width: 2)
             }
         }
+        .colorInvert()
     }
 
     func actionButtonPressed(_ action: Action)

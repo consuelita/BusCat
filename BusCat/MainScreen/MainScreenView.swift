@@ -14,18 +14,24 @@ struct MainScreenView: View
 
     var body: some View
     {
-        NavigationStack
+        ZStack
         {
-            switch $navigation.currentView.wrappedValue
-            {
-                case .galaxyMap:
-                    GalaxyMapView(galaxy: $galaxy.wrappedValue)
+            Color.black
+            .ignoresSafeArea()
 
-                case .scene:
-                    SceneView(type: $navigation.sceneType.wrappedValue)
+            NavigationStack
+            {
+                switch $navigation.currentView.wrappedValue
+                {
+                    case .galaxyMap:
+                        GalaxyMapView(galaxy: $galaxy.wrappedValue)
+
+                    case .scene:
+                        SceneView(type: $navigation.sceneType.wrappedValue)
+                }
             }
+            .environmentObject(navigation)
         }
-        .environmentObject(navigation)
     }
 }
 
