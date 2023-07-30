@@ -13,11 +13,13 @@ public class GameState: ObservableObject
     @Published public var currentView: MainViewSetting
     @Published public var sceneType: SceneType
     @Published public var backpack: Backpack
+    @Published public var itemGroup: Int
 
     public init()
     {
         self.currentView = .galaxyMap
         self.sceneType = .none
         self.backpack = Backpack()
+        self.itemGroup = 0
     }
 }

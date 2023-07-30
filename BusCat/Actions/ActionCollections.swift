@@ -59,14 +59,20 @@ extension ActionCollections
     {
         print("fishing")
 
-        guard let index = state.backpack.groups[0].findEmptySpace() else
+        guard state.sceneType == .nature else
+        {
+            print("You can't fish here!")
+            return
+        }
+
+        guard let index = state.backpack.groups[state.itemGroup].findEmptySpace() else
         {
             print("no free backpack slots")
             return
         }
 
-        print("fish -> (0, \(index))")
-        state.backpack.groups[0].items[index] = Item.fish
+        print("fish -> (\(state.itemGroup), \(index))")
+        state.backpack.groups[state.itemGroup].items[index] = Item.fish
         state.objectWillChange.send() // FIXME - This is a hack, there should be a way to get around doing this explictly.
     }
 }

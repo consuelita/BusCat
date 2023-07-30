@@ -15,12 +15,72 @@ struct VerticalInventoryBar: View
     {
         VStack
         {
-            ForEach($state.backpack.groups[0].items.wrappedValue)
+            HStack
+            {
+                if $state.itemGroup.wrappedValue == 0
+                {
+                    Button(action: self.left)
+                    {
+                        Image(systemName: "arrow.left")
+                    }
+                    .buttonStyle(.plain)
+                    .hidden()
+                }
+                else
+                {
+                    Button(action: self.left)
+                    {
+                        Image(systemName: "arrow.left")
+                    }
+                    .buttonStyle(.plain)
+                }
+
+                Text("\($state.itemGroup.wrappedValue + 1)")
+
+                if $state.itemGroup.wrappedValue == 7
+                {
+                    Button(action: self.right)
+                    {
+                        Image(systemName: "arrow.right")
+                    }
+                    .buttonStyle(.plain)
+                    .hidden()
+                }
+                else
+                {
+                    Button(action: self.right)
+                    {
+                        Image(systemName: "arrow.right")
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .font(.system(size: 18))
+            .colorInvert()
+            .padding(.bottom, 10)
+
+            ForEach($state.backpack.groups[$state.itemGroup.wrappedValue].items.wrappedValue)
             {
                 item in
                 
                 ItemView(item: item, action: self.itemButtonPressed)
             }
+        }
+    }
+
+    func left()
+    {
+        if state.itemGroup > 0
+        {
+            state.itemGroup = state.itemGroup - 1
+        }
+    }
+
+    func right()
+    {
+        if state.itemGroup < 7
+        {
+            state.itemGroup = state.itemGroup + 1
         }
     }
 
