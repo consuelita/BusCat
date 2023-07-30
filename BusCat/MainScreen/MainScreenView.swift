@@ -10,7 +10,7 @@ import SwiftUI
 struct MainScreenView: View
 {
     @State var galaxy: Galaxy
-    @StateObject var navigation: GameNavigation = GameNavigation()
+    @StateObject var state: GameState = GameState()
 
     var body: some View
     {
@@ -21,16 +21,19 @@ struct MainScreenView: View
 
             NavigationStack
             {
-                switch $navigation.currentView.wrappedValue
+                switch $state.currentView.wrappedValue
                 {
                     case .galaxyMap:
                         GalaxyMapView(galaxy: $galaxy.wrappedValue)
 
                     case .scene:
-                        SceneView(type: $navigation.sceneType.wrappedValue)
+                        SceneView(type: $state.sceneType.wrappedValue)
+
+                    case .backpack:
+                        BackpackView()
                 }
             }
-            .environmentObject(navigation)
+            .environmentObject(state)
         }
     }
 }

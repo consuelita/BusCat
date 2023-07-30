@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MapPointOfInterest: View
 {
-    @EnvironmentObject var navigation: GameNavigation
+    @EnvironmentObject var navigation: GameState
     @State var waypoint: Waypoint
 
     var body: some View
@@ -17,6 +17,7 @@ struct MapPointOfInterest: View
         Button(action: self.clicked)
         {
             Image(systemName: $waypoint.type.wrappedValue.rawValue)
+            .font(.system(size: 30))
             .foregroundColor($waypoint.color.wrappedValue)
         }
         .position(CGPoint(x: $waypoint.x.wrappedValue, y: $waypoint.y.wrappedValue))

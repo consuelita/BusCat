@@ -18,7 +18,7 @@
 		DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */; };
 		DAEACEA12A72100100D5D587 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA02A72100100D5D587 /* MainScreenView.swift */; };
 		DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA32A72104300D5D587 /* MainViewSetting.swift */; };
-		DAEACEA62A72111700D5D587 /* GameNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA52A72111700D5D587 /* GameNavigation.swift */; };
+		DAEACEA62A72111700D5D587 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA52A72111700D5D587 /* GameState.swift */; };
 		DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEA82A72145000D5D587 /* SceneView.swift */; };
 		DAEACEAB2A721AB800D5D587 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAA2A721AB800D5D587 /* SceneType.swift */; };
 		DAEACEAE2A731B1C00D5D587 /* Galaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */; };
@@ -30,6 +30,12 @@
 		DAEACEBB2A759BCD00D5D587 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEBA2A759BCD00D5D587 /* Action.swift */; };
 		DAEACEBE2A75A2C800D5D587 /* ActionCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEBD2A75A2C800D5D587 /* ActionCollections.swift */; };
 		DAEACEC02A75A8FD00D5D587 /* VerticalActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEBF2A75A8FD00D5D587 /* VerticalActionBar.swift */; };
+		DAEACEC42A77021F00D5D587 /* Backpack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEC32A77021F00D5D587 /* Backpack.swift */; };
+		DAEACEC62A77033100D5D587 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEC52A77033100D5D587 /* Item.swift */; };
+		DAEACEC92A7705D700D5D587 /* BackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACEC82A7705D700D5D587 /* BackpackView.swift */; };
+		DAEACECB2A77075D00D5D587 /* ItemGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACECA2A77075D00D5D587 /* ItemGroup.swift */; };
+		DAEACECD2A77151000D5D587 /* VerticalInventoryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACECC2A77151000D5D587 /* VerticalInventoryBar.swift */; };
+		DAEACECF2A771BF900D5D587 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACECE2A771BF900D5D587 /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +71,7 @@
 		DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestType.swift; sourceTree = "<group>"; };
 		DAEACEA02A72100100D5D587 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		DAEACEA32A72104300D5D587 /* MainViewSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSetting.swift; sourceTree = "<group>"; };
-		DAEACEA52A72111700D5D587 /* GameNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNavigation.swift; sourceTree = "<group>"; };
+		DAEACEA52A72111700D5D587 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		DAEACEA82A72145000D5D587 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		DAEACEAA2A721AB800D5D587 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
 		DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galaxy.swift; sourceTree = "<group>"; };
@@ -76,6 +82,12 @@
 		DAEACEBA2A759BCD00D5D587 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		DAEACEBD2A75A2C800D5D587 /* ActionCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCollections.swift; sourceTree = "<group>"; };
 		DAEACEBF2A75A8FD00D5D587 /* VerticalActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalActionBar.swift; sourceTree = "<group>"; };
+		DAEACEC32A77021F00D5D587 /* Backpack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backpack.swift; sourceTree = "<group>"; };
+		DAEACEC52A77033100D5D587 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DAEACEC82A7705D700D5D587 /* BackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackView.swift; sourceTree = "<group>"; };
+		DAEACECA2A77075D00D5D587 /* ItemGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGroup.swift; sourceTree = "<group>"; };
+		DAEACECC2A77151000D5D587 /* VerticalInventoryBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalInventoryBar.swift; sourceTree = "<group>"; };
+		DAEACECE2A771BF900D5D587 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +144,7 @@
 				DAEACEA22A72102600D5D587 /* MainScreen */,
 				DAEACE9D2A7209DA00D5D587 /* GalaxyMap */,
 				DAEACEA72A72140600D5D587 /* Scene */,
+				DAEACEC72A7705C500D5D587 /* Backpack */,
 				AE6F112B2A71EEB300F9DCC2 /* BusCatApp.swift */,
 				AE6F112F2A71EEB300F9DCC2 /* Assets.xcassets */,
 				AE6F11342A71EEB300F9DCC2 /* BusCat.entitlements */,
@@ -178,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				DAEACEA02A72100100D5D587 /* MainScreenView.swift */,
-				DAEACEA52A72111700D5D587 /* GameNavigation.swift */,
 				DAEACEA32A72104300D5D587 /* MainViewSetting.swift */,
 			);
 			path = MainScreen;
@@ -190,6 +202,7 @@
 				DAEACEA82A72145000D5D587 /* SceneView.swift */,
 				DAEACEB62A759AD800D5D587 /* HorizontalActionBar.swift */,
 				DAEACEBF2A75A8FD00D5D587 /* VerticalActionBar.swift */,
+				DAEACECC2A77151000D5D587 /* VerticalInventoryBar.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 		DAEACEAC2A731B1000D5D587 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DAEACEA52A72111700D5D587 /* GameState.swift */,
 				DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */,
 				DAEACEAF2A731B4A00D5D587 /* Waypoint.swift */,
 				DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */,
@@ -204,6 +218,9 @@
 				DAEACEB42A734D0D00D5D587 /* GridCell.swift */,
 				DAEACEB82A759B2B00D5D587 /* ActionCollection.swift */,
 				DAEACEBA2A759BCD00D5D587 /* Action.swift */,
+				DAEACEC32A77021F00D5D587 /* Backpack.swift */,
+				DAEACEC52A77033100D5D587 /* Item.swift */,
+				DAEACECA2A77075D00D5D587 /* ItemGroup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +231,15 @@
 				DAEACEBD2A75A2C800D5D587 /* ActionCollections.swift */,
 			);
 			path = Actions;
+			sourceTree = "<group>";
+		};
+		DAEACEC72A7705C500D5D587 /* Backpack */ = {
+			isa = PBXGroup;
+			children = (
+				DAEACEC82A7705D700D5D587 /* BackpackView.swift */,
+				DAEACECE2A771BF900D5D587 /* ItemView.swift */,
+			);
+			path = Backpack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEACECD2A77151000D5D587 /* VerticalInventoryBar.swift in Sources */,
 				DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */,
 				AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */,
 				DAEACEC02A75A8FD00D5D587 /* VerticalActionBar.swift in Sources */,
@@ -359,13 +386,18 @@
 				DAEACEA12A72100100D5D587 /* MainScreenView.swift in Sources */,
 				DAEACEAE2A731B1C00D5D587 /* Galaxy.swift in Sources */,
 				DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */,
+				DAEACECF2A771BF900D5D587 /* ItemView.swift in Sources */,
+				DAEACEC42A77021F00D5D587 /* Backpack.swift in Sources */,
+				DAEACEC92A7705D700D5D587 /* BackpackView.swift in Sources */,
 				DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */,
 				DAEACEB72A759AD800D5D587 /* HorizontalActionBar.swift in Sources */,
 				DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */,
 				DAEACEAB2A721AB800D5D587 /* SceneType.swift in Sources */,
-				DAEACEA62A72111700D5D587 /* GameNavigation.swift in Sources */,
+				DAEACEA62A72111700D5D587 /* GameState.swift in Sources */,
 				DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */,
+				DAEACEC62A77033100D5D587 /* Item.swift in Sources */,
 				DAEACEB52A734D0D00D5D587 /* GridCell.swift in Sources */,
+				DAEACECB2A77075D00D5D587 /* ItemGroup.swift in Sources */,
 				DAEACEBB2A759BCD00D5D587 /* Action.swift in Sources */,
 				DAEACEB92A759B2B00D5D587 /* ActionCollection.swift in Sources */,
 				DAEACEBE2A75A2C800D5D587 /* ActionCollections.swift in Sources */,

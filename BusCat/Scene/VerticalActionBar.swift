@@ -10,7 +10,7 @@ import SwiftUI
 struct VerticalActionBar: View
 {
     @State var actions: ActionCollection
-    @EnvironmentObject var navigation: GameNavigation
+    @EnvironmentObject var navigation: GameState
 
     var body: some View
     {

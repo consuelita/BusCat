@@ -8,14 +8,16 @@
 import Foundation
 import SwiftUI
 
-public class GameNavigation: ObservableObject
+public class GameState: ObservableObject
 {
     @Published public var currentView: MainViewSetting
     @Published public var sceneType: SceneType
+    @Published public var backpack: Backpack
 
     public init()
     {
         self.currentView = .galaxyMap
         self.sceneType = .none
+        self.backpack = Backpack()
     }
 }

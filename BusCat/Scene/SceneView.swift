@@ -11,7 +11,7 @@ struct SceneView: View
 {
     @State var type: SceneType
     @State var selection: Int = 0
-    @EnvironmentObject var navigtion: GameNavigation
+    @EnvironmentObject var state: GameState
 
     var body: some View
     {
@@ -22,9 +22,6 @@ struct SceneView: View
 
             HStack
             {
-//                VerticalActionBar(actions: ActionCollections.left)
-//                .padding(.right, 10)
-
                 ZStack
                 {
                     VStack {
@@ -52,7 +49,8 @@ struct SceneView: View
                     .padding()
                 }
 
-                Text("Status Effects")
+                VerticalInventoryBar()
+                .padding(.trailing, 10)
             }
 
             // Inventory
@@ -63,7 +61,7 @@ struct SceneView: View
 
     func mapClicked()
     {
-        self.navigtion.currentView = .galaxyMap
+        self.state.currentView = .galaxyMap
     }
 
     func takeAction()
