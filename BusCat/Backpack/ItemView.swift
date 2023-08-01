@@ -10,7 +10,20 @@ import SwiftUI
 struct ItemView: View
 {
     let item: Item
+    @State var selected: Bool
     let action: (Item) -> Void
+
+    public var borderColor: Color
+    {
+        if selected
+        {
+            return .white
+        }
+        else
+        {
+            return .gray
+        }
+    }
 
     var body: some View
     {
@@ -41,7 +54,7 @@ struct ItemView: View
             }
         }
         .buttonStyle(.plain)
-        .border(.gray, width: 2)
+        .border(self.borderColor, width: 2)
     }
 }
 
@@ -51,7 +64,7 @@ struct ItemView_Previews: PreviewProvider
     {
         let item = Item.fish
 
-        ItemView(item: item, action: Self.itemPressed)
+        ItemView(item: item, selected: false, action: Self.itemPressed)
     }
 
     static func itemPressed(_ item: Item)

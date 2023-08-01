@@ -13,7 +13,7 @@ struct VerticalInventoryBar: View
 
     var body: some View
     {
-        VStack
+        VStack(spacing: 8)
         {
             HStack
             {
@@ -63,7 +63,7 @@ struct VerticalInventoryBar: View
             {
                 item in
                 
-                ItemView(item: item, action: self.itemButtonPressed)
+                ItemView(item: item, selected: false, action: self.itemButtonPressed)
             }
         }
     }

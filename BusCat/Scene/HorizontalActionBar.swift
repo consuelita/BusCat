@@ -14,7 +14,7 @@ struct HorizontalActionBar: View
 
     var body: some View
     {
-        HStack
+        HStack(spacing: 8)
         {
             ForEach($actions.actions.wrappedValue)
             {
@@ -31,7 +31,10 @@ struct HorizontalActionBar: View
                     else
                     {
                         action.image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                         .font(.system(size: 60))
+                        .frame(width: 64, height: 64)
                     }
                 }
                 .buttonStyle(.plain)

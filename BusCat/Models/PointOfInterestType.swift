@@ -12,5 +12,5 @@ public enum PointOfInterestType: String
     case star = "star"
     case planet = "globe"
     case anomaly = "questionmark.circle.fill"
-    case temple = "building.columns.circle.fill"
+    case city = "building.columns.circle.fill"
 }

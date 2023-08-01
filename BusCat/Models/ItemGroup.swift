@@ -93,3 +93,18 @@ public class ItemGroupIdentifier
     }
 }
 
+extension ItemGroup: Equatable
+{
+    public static func == (lhs: ItemGroup, rhs: ItemGroup) -> Bool
+    {
+        return lhs.id == rhs.id
+    }
+}
+
+extension ItemGroup: Hashable
+{
+    public func hash(into hasher: inout Hasher)
+    {
+        hasher.combine(self.id)
+    }
+}

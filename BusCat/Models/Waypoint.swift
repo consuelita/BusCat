@@ -14,9 +14,9 @@ public struct Waypoint
     public var color: Color
     public var x: Double
     public var y: Double
-    public var scene: SceneType
+    public var scene: WaypointScene
 
-    public init(type: PointOfInterestType, color: Color, x: Double, y: Double, scene: SceneType)
+    public init(type: PointOfInterestType, color: Color, x: Double, y: Double, scene: WaypointScene)
     {
         self.type = type
         self.color = color

@@ -32,7 +32,7 @@ extension ActionCollections
     static public func starmap(_ state: GameState)
     {
         state.currentView = .galaxyMap
-        state.sceneType = .none
+        state.scene = SceneCollections.space.empty
     }
 
     static public func backpack(_ state: GameState)
@@ -59,7 +59,7 @@ extension ActionCollections
     {
         print("fishing")
 
-        guard state.sceneType == .nature else
+        guard state.scene.type == .planet else
         {
             print("You can't fish here!")
             return

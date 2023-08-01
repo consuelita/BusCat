@@ -7,9 +7,10 @@
 
 import Foundation
 
-public enum SceneType: String
+public enum SceneType
 {
-    case anomaly = "AnomalyPlanetRainbow"
-    case nature = "NatureScene"
-    case none = "Space"
+    case anomaly
+    case planet
+    case space
+    case star
 }

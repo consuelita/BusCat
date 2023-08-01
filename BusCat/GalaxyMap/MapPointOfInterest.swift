@@ -27,7 +27,7 @@ struct MapPointOfInterest: View
     func clicked()
     {
         print("Clicked waypoint, changing to scene")
-        navigation.sceneType = $waypoint.scene.wrappedValue
+        navigation.scene = waypoint.scene
         navigation.currentView = .scene
     }
 }
@@ -36,7 +36,7 @@ struct MapPointOfInterest_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        let waypoint = Waypoint(type: .star, color: .red, x: 335, y: 337, scene: .none)
+        let waypoint = Waypoint(type: .star, color: .red, x: 335, y: 337, scene: SceneCollections.star.red)
         MapPointOfInterest(waypoint: waypoint)
     }
 }

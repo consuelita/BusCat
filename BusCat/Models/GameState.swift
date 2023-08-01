@@ -11,15 +11,17 @@ import SwiftUI
 public class GameState: ObservableObject
 {
     @Published public var currentView: MainViewSetting
-    @Published public var sceneType: SceneType
+    @Published public var scene: WaypointScene
     @Published public var backpack: Backpack
     @Published public var itemGroup: Int
+    @Published public var itemSelection: ObjectIdentifier?
 
     public init()
     {
         self.currentView = .galaxyMap
-        self.sceneType = .none
+        self.scene = SceneCollections.space.empty
         self.backpack = Backpack()
         self.itemGroup = 0
+        self.itemSelection = nil
     }
 }

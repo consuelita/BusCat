@@ -35,7 +35,14 @@ struct BackpackView: View
                         {
                             item in
 
-                            ItemView(item: item, action: self.itemButtonPressed)
+                            if let selected = $state.itemSelection.wrappedValue, item.id == selected
+                            {
+                                ItemView(item: item, selected: true, action: self.itemButtonPressed)
+                            }
+                            else
+                            {
+                                ItemView(item: item, selected: false, action: self.itemButtonPressed)
+                            }
                         }
                     }
                 }
@@ -50,7 +57,14 @@ struct BackpackView: View
 
     func itemButtonPressed(_ item: Item)
     {
-
+        if self.state.itemSelection == item.id
+        {
+            self.state.itemSelection = nil
+        }
+        else
+        {
+            self.state.itemSelection = item.id
+        }
     }
 }
 

@@ -14,7 +14,7 @@ struct VerticalActionBar: View
 
     var body: some View
     {
-        VStack
+        VStack(spacing: 8)
         {
             ForEach($actions.actions.wrappedValue)
             {
