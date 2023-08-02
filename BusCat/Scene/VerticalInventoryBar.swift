@@ -56,7 +56,6 @@ struct VerticalInventoryBar: View
                 }
             }
             .font(.system(size: 18))
-            .colorInvert()
             .padding(.bottom, 10)
 
             ForEach($state.backpack.groups[$state.itemGroup.wrappedValue].items.wrappedValue)

@@ -32,14 +32,20 @@ struct ItemView: View
             if item.hidden || item.count == 0
             {
                 item.image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
                 .font(.system(size: 60))
+                .frame(width: 64, height: 64)
                 .hidden()
             }
             else if item.count == 1
             {
                 item.image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
                 .font(.system(size: 60))
-                .colorInvert()
+                .frame(width: 64, height: 64)
+                .foregroundColor(.white)
             }
             else
             {

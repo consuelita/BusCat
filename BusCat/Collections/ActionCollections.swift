@@ -57,7 +57,7 @@ extension ActionCollections
 
     static public func fishing(_ state: GameState)
     {
-        print("fishing")
+        print("fishing \(state.scene.type)")
 
         guard state.scene.type == .planet else
         {

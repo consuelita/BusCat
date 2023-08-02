@@ -25,6 +25,8 @@ public struct AnomalySceneCollection
     public let rainbow = WaypointScene("Rainbow Obelisk Anomaly", .anomaly, "AnomalyPlanetRainbow")
     public let fractal = WaypointScene("Fractal Mountains Anomaly", .anomaly, "FractalMountains")
     public let stars = WaypointScene("It's Full of Stars Anomaly", .anomaly, "FullOfStarsAnomaly")
+    public let whale = WaypointScene("Space Whale Skeleton", .anomaly, "SpaceWhaleSkeleton")
+    public let wonderwall = WaypointScene("The Wonderwall", .anomaly, "Wonderwall")
 }
 
 public struct StarSceneCollection
@@ -34,8 +36,8 @@ public struct StarSceneCollection
 
 public struct PlanetSceneCollection
 {
-    public let nature = WaypointScene("Garden Planet with a Pond", .anomaly, "NatureScene")
-    public let water = WaypointScene("Water Planet", .anomaly, "WaterPlanet")
-    public let garden = WaypointScene("Literal Garden Planet", .anomaly, "LotsOfFlowers")
-    public let weird = WaypointScene("Weird Garden Planet", .anomaly, "RedBulbousPlanet")
+    public let nature = WaypointScene("Garden Planet with a Pond", .planet, "NatureScene")
+    public let water = WaypointScene("Water Planet", .planet, "WaterPlanet")
+    public let garden = WaypointScene("Literal Garden Planet", .planet, "LotsOfFlowers")
+    public let weird = WaypointScene("Weird Garden Planet", .planet, "RedBulbousPlanet")
 }

@@ -25,7 +25,10 @@ struct HorizontalActionBar: View
                     if action.hidden
                     {
                         action.image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                         .font(.system(size: 60))
+                        .frame(width: 64, height: 64)
                         .hidden()
                     }
                     else
@@ -35,13 +38,13 @@ struct HorizontalActionBar: View
                         .aspectRatio(contentMode: .fit)
                         .font(.system(size: 60))
                         .frame(width: 64, height: 64)
+                        .foregroundColor(.white)
                     }
                 }
                 .buttonStyle(.plain)
                 .border(.gray, width: 2)
             }
         }
-        .colorInvert()
     }
 
     func actionButtonPressed(_ action: Action)
