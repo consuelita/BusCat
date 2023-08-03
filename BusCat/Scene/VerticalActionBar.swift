@@ -50,7 +50,7 @@ struct VerticalActionBar_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        VerticalActionBar(actions: ActionCollections.top)
+        VerticalActionBar(actions: ActionCollections.sceneTop)
     }
 
     static func callback()

@@ -57,7 +57,7 @@ struct HorizontalActionBar_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        HorizontalActionBar(actions: ActionCollections.top)
+        HorizontalActionBar(actions: ActionCollections.sceneTop)
     }
 
     static func callback()

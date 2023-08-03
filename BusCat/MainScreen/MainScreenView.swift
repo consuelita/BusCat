@@ -31,6 +31,9 @@ struct MainScreenView: View
 
                     case .backpack:
                         BackpackView()
+
+                    case .fishing:
+                        FishingView()
                 }
             }
             .environmentObject(state)

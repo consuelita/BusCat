@@ -17,7 +17,7 @@ struct SceneView: View
     {
         VStack
         {
-            HorizontalActionBar(actions: ActionCollections.top)
+            HorizontalActionBar(actions: ActionCollections.sceneTop)
             .padding(.top, 10)
 
             HStack
@@ -38,24 +38,16 @@ struct SceneView: View
             }
 
             // Inventory
-            HorizontalActionBar(actions: ActionCollections.bottom)
+            HorizontalActionBar(actions: ActionCollections.sceneBottom)
             .padding(.bottom, 10)
         }
     }
-
-    func mapClicked()
-    {
-        self.state.currentView = .galaxyMap
-    }
-
-    func takeAction()
-    {
-        print("action clicked")
-    }
 }
 
-struct SceneView_Previews: PreviewProvider {
-    static var previews: some View {
+struct SceneView_Previews: PreviewProvider
+{
+    static var previews: some View
+    {
         SceneView(scene: SceneCollections.planet.nature)
     }
 }

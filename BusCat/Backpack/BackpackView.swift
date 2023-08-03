@@ -22,6 +22,7 @@ struct BackpackView: View
                 .aspectRatio(contentMode: .fit)
                 .font(.system(size: 60))
                 .frame(width: 64, height: 64)
+                .foregroundColor(.white)
             }
             .buttonStyle(.plain)
 
@@ -31,7 +32,7 @@ struct BackpackView: View
                 {
                     group in
 
-                    VStack
+                    VStack(spacing: 0)
                     {
                         ForEach(group.items)
                         {

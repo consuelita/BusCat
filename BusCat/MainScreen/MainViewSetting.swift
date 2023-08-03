@@ -12,4 +12,5 @@ public enum MainViewSetting
     case galaxyMap
     case scene
     case backpack
+    case fishing
 }

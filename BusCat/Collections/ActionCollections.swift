@@ -18,7 +18,18 @@ public struct ActionCollections
 // Top
 extension ActionCollections
 {
-    static public let top = ActionCollection(actions: [
+    static public let sceneTop = ActionCollection(actions: [
+        Action(name: "starmap", imageName: "map", callback: Self.starmap),
+        Action(name: "backpack", imageName: "backpack", hidden: false, callback: Self.backpack),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+    ])
+
+    static public let activityTop = ActionCollection(actions: [
         Action(name: "starmap", imageName: "map", callback: Self.starmap),
         Action(name: "backpack", imageName: "backpack", hidden: false, callback: Self.backpack),
         Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
@@ -39,12 +50,17 @@ extension ActionCollections
     {
         state.currentView = .backpack
     }
+
+    static public func scene(_ state: GameState)
+    {
+        state.currentView = .scene
+    }
 }
 
 // Bottom
 extension ActionCollections
 {
-    static public let bottom = ActionCollection(actions: [
+    static public let sceneBottom = ActionCollection(actions: [
         Action(name: "fishing", imageName: "figure.fishing", callback: Self.fishing),
         Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
         Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
@@ -55,7 +71,23 @@ extension ActionCollections
         Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
     ])
 
+    static public let fishingBottom = ActionCollection(actions: [
+        Action(name: "fishing", imageName: "figure.fishing", callback: Self.fishingActivity),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+    ])
+
     static public func fishing(_ state: GameState)
+    {
+        state.currentView = .fishing
+    }
+
+    static public func fishingActivity(_ state: GameState)
     {
         print("fishing \(state.scene.type)")
 

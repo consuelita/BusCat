@@ -15,6 +15,7 @@
 		AE6F114A2A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */; };
 		DA86421A2A78757F0093F858 /* SceneCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8642192A78757F0093F858 /* SceneCollections.swift */; };
 		DA86421C2A7876CB0093F858 /* WaypointScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86421B2A7876CB0093F858 /* WaypointScene.swift */; };
+		DABD81972A7C5E9D00696143 /* FishingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81962A7C5E9D00696143 /* FishingView.swift */; };
 		DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */; };
 		DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */; };
 		DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */; };
@@ -70,6 +71,7 @@
 		AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA8642192A78757F0093F858 /* SceneCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCollections.swift; sourceTree = "<group>"; };
 		DA86421B2A7876CB0093F858 /* WaypointScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointScene.swift; sourceTree = "<group>"; };
+		DABD81962A7C5E9D00696143 /* FishingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingView.swift; sourceTree = "<group>"; };
 		DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyMapView.swift; sourceTree = "<group>"; };
 		DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointOfInterest.swift; sourceTree = "<group>"; };
 		DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestType.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				DAEACEA22A72102600D5D587 /* MainScreen */,
 				DAEACE9D2A7209DA00D5D587 /* GalaxyMap */,
 				DAEACEA72A72140600D5D587 /* Scene */,
+				DABD81952A7C5E8A00696143 /* Activities */,
 				DAEACEC72A7705C500D5D587 /* Backpack */,
 				AE6F112B2A71EEB300F9DCC2 /* BusCatApp.swift */,
 				AE6F112F2A71EEB300F9DCC2 /* Assets.xcassets */,
@@ -180,6 +183,14 @@
 				AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */,
 			);
 			path = BusCatUITests;
+			sourceTree = "<group>";
+		};
+		DABD81952A7C5E8A00696143 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				DABD81962A7C5E9D00696143 /* FishingView.swift */,
+			);
+			path = Activities;
 			sourceTree = "<group>";
 		};
 		DAEACE9D2A7209DA00D5D587 /* GalaxyMap */ = {
@@ -385,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAEACECD2A77151000D5D587 /* VerticalInventoryBar.swift in Sources */,
+				DABD81972A7C5E9D00696143 /* FishingView.swift in Sources */,
 				DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */,
 				DA86421C2A7876CB0093F858 /* WaypointScene.swift in Sources */,
 				AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */,
