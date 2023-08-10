@@ -16,6 +16,8 @@
 		DA86421A2A78757F0093F858 /* SceneCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8642192A78757F0093F858 /* SceneCollections.swift */; };
 		DA86421C2A7876CB0093F858 /* WaypointScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86421B2A7876CB0093F858 /* WaypointScene.swift */; };
 		DABD81972A7C5E9D00696143 /* FishingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81962A7C5E9D00696143 /* FishingView.swift */; };
+		DABD81992A842BAD00696143 /* ShipMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81982A842BAD00696143 /* ShipMapView.swift */; };
+		DABD819E2A842F5300696143 /* ShipExteriorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD819D2A842F5300696143 /* ShipExteriorView.swift */; };
 		DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */; };
 		DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */; };
 		DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */; };
@@ -72,6 +74,8 @@
 		DA8642192A78757F0093F858 /* SceneCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCollections.swift; sourceTree = "<group>"; };
 		DA86421B2A7876CB0093F858 /* WaypointScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointScene.swift; sourceTree = "<group>"; };
 		DABD81962A7C5E9D00696143 /* FishingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingView.swift; sourceTree = "<group>"; };
+		DABD81982A842BAD00696143 /* ShipMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipMapView.swift; sourceTree = "<group>"; };
+		DABD819D2A842F5300696143 /* ShipExteriorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipExteriorView.swift; sourceTree = "<group>"; };
 		DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyMapView.swift; sourceTree = "<group>"; };
 		DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointOfInterest.swift; sourceTree = "<group>"; };
 		DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestType.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				DAEACEA22A72102600D5D587 /* MainScreen */,
 				DAEACE9D2A7209DA00D5D587 /* GalaxyMap */,
 				DAEACEA72A72140600D5D587 /* Scene */,
+				DABD819A2A842EFB00696143 /* Ship */,
 				DABD81952A7C5E8A00696143 /* Activities */,
 				DAEACEC72A7705C500D5D587 /* Backpack */,
 				AE6F112B2A71EEB300F9DCC2 /* BusCatApp.swift */,
@@ -193,10 +198,19 @@
 			path = Activities;
 			sourceTree = "<group>";
 		};
+		DABD819A2A842EFB00696143 /* Ship */ = {
+			isa = PBXGroup;
+			children = (
+				DABD819D2A842F5300696143 /* ShipExteriorView.swift */,
+			);
+			path = Ship;
+			sourceTree = "<group>";
+		};
 		DAEACE9D2A7209DA00D5D587 /* GalaxyMap */ = {
 			isa = PBXGroup;
 			children = (
 				DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */,
+				DABD81982A842BAD00696143 /* ShipMapView.swift */,
 				DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */,
 			);
 			path = GalaxyMap;
@@ -398,6 +412,7 @@
 				DAEACECD2A77151000D5D587 /* VerticalInventoryBar.swift in Sources */,
 				DABD81972A7C5E9D00696143 /* FishingView.swift in Sources */,
 				DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */,
+				DABD819E2A842F5300696143 /* ShipExteriorView.swift in Sources */,
 				DA86421C2A7876CB0093F858 /* WaypointScene.swift in Sources */,
 				AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */,
 				DAEACEC02A75A8FD00D5D587 /* VerticalActionBar.swift in Sources */,
@@ -420,6 +435,7 @@
 				DAEACECB2A77075D00D5D587 /* ItemGroup.swift in Sources */,
 				DAEACEBB2A759BCD00D5D587 /* Action.swift in Sources */,
 				DAEACEB92A759B2B00D5D587 /* ActionCollection.swift in Sources */,
+				DABD81992A842BAD00696143 /* ShipMapView.swift in Sources */,
 				DAEACEBE2A75A2C800D5D587 /* ActionCollections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

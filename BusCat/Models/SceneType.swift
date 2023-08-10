@@ -13,4 +13,7 @@ public enum SceneType
     case planet
     case space
     case star
+    case captain
+    case astronavigation
+    case engineering
 }

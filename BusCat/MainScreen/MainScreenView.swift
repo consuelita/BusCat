@@ -34,6 +34,9 @@ struct MainScreenView: View
 
                     case .fishing:
                         FishingView()
+
+                    case .shipExterior:
+                        ShipExteriorView()
                 }
             }
             .environmentObject(state)

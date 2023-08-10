@@ -55,7 +55,8 @@ struct BackpackView: View
 
     func exit()
     {
-        self.state.currentView = .scene
+        self.state.scene = state.backScene
+        self.state.currentView = state.backView
     }
 
     func itemButtonPressed(_ item: Item)

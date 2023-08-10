@@ -29,6 +29,17 @@ extension ActionCollections
         Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
     ])
 
+    static public let shipTop = ActionCollection(actions: [
+        Action(name: "starmap", imageName: "map", callback: Self.starmap),
+        Action(name: "backpack", imageName: "backpack", hidden: false, callback: Self.backpack),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+    ])
+
     static public let activityTop = ActionCollection(actions: [
         Action(name: "starmap", imageName: "map", callback: Self.starmap),
         Action(name: "backpack", imageName: "backpack", hidden: false, callback: Self.backpack),
@@ -48,6 +59,9 @@ extension ActionCollections
 
     static public func backpack(_ state: GameState)
     {
+        state.backView = state.currentView
+        state.backScene = state.scene
+
         state.currentView = .backpack
     }
 

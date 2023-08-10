@@ -15,6 +15,9 @@ public class GameState: ObservableObject
     @Published public var backpack: Backpack
     @Published public var itemGroup: Int
     @Published public var itemSelection: ObjectIdentifier?
+    @Published public var shipPosition: CGPoint
+    @Published public var backView: MainViewSetting
+    @Published public var backScene: WaypointScene
 
     public init()
     {
@@ -23,5 +26,8 @@ public class GameState: ObservableObject
         self.backpack = Backpack()
         self.itemGroup = 0
         self.itemSelection = nil
+        self.shipPosition = CGPoint(x: 750, y: 710)
+        self.backView = .shipExterior
+        self.backScene = SceneCollections.space.empty
     }
 }

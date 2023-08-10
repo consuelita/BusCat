@@ -9,13 +9,16 @@ import Foundation
 
 import SwiftUI
 
-struct GalaxyMapView: View {
+struct GalaxyMapView: View
+{
     @State var galaxy: Galaxy
 
-    var body: some View {
+    var body: some View
+    {
         ZStack
         {
-            VStack {
+            VStack
+            {
                 if let image = NSImage(named: NSImage.Name($galaxy.map.wrappedValue))
                 {
                     Image(nsImage: image)
@@ -30,12 +33,7 @@ struct GalaxyMapView: View {
                 MapPointOfInterest(waypoint: waypoint)
             }
 
-//            if let image = NSImage(named: NSImage.Name("spiky-field"))
-//            {
-//                Image(nsImage: image)
-//                .resizable()
-//                .frame(width: 64, height: 64)
-//            }
+            ShipMapView()
         }
         .frame(width: 1024, height: 1024)
     }

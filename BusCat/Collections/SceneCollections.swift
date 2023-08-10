@@ -13,6 +13,9 @@ public struct SceneCollections
     static public let anomaly = AnomalySceneCollection()
     static public let star = StarSceneCollection()
     static public let planet = PlanetSceneCollection()
+    static public let captain = CaptainSceneCollection()
+    static public let navigation = NavigationSceneCollection()
+    static public let engineering = EngineeringSceneCollection()
 }
 
 public struct SpaceSceneCollection
@@ -40,4 +43,20 @@ public struct PlanetSceneCollection
     public let water = WaypointScene("Water Planet", .planet, "WaterPlanet")
     public let garden = WaypointScene("Literal Garden Planet", .planet, "LotsOfFlowers")
     public let weird = WaypointScene("Weird Garden Planet", .planet, "RedBulbousPlanet")
+}
+
+public struct CaptainSceneCollection
+{
+    public let ship1 = WaypointScene("Captains' Chair", .captain, "CaptainsChair1")
+    public let ship2 = WaypointScene("Captains' Chair", .captain, "CaptainsChair2")
+}
+
+public struct NavigationSceneCollection
+{
+    public let ship1 = WaypointScene("Astronavigation", .astronavigation, "Astronavigation")
+}
+
+public struct EngineeringSceneCollection
+{
+    public let ship1 = WaypointScene("Engineering", .engineering, "Engineering")
 }

@@ -27,6 +27,7 @@ struct FishingView: View
                                 .resizable()
                                 .frame(width: 64, height: 64)
                                 .padding(.leading, 128)
+                                .padding(.top, 10)
                                 .padding(.bottom, 0)
                         }
                     }

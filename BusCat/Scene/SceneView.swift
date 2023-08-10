@@ -17,9 +17,30 @@ struct SceneView: View
     {
         VStack
         {
-            HorizontalActionBar(actions: ActionCollections.sceneTop)
-            .padding(.top, 10)
+            ZStack
+            {
+                HStack
+                {
+                    Button(action: self.shipClicked)
+                    {
+                        if let image = NSImage(named: NSImage.Name("Ship"))
+                        {
+                            Image(nsImage: image)
+                                .resizable()
+                                .frame(width: 64, height: 64)
+                                .padding(.leading, 128)
+                                .padding(.top, 10)
+                                .padding(.bottom, 0)
+                        }
+                    }
+                    .buttonStyle(.plain)
 
+                    Spacer()
+                }
+
+                HorizontalActionBar(actions: ActionCollections.activityTop)
+                    .padding(.top, 10)
+            }
             HStack
             {
                 ZStack
@@ -41,6 +62,11 @@ struct SceneView: View
             HorizontalActionBar(actions: ActionCollections.sceneBottom)
             .padding(.bottom, 10)
         }
+    }
+
+    public func shipClicked()
+    {
+        state.currentView = .shipExterior
     }
 }
 
