@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "CaptainsChair2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "CaptainsChair2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

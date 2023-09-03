@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "SpaceWhaleSkeleton.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "SpaceWhaleSkeleton.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

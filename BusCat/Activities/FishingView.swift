@@ -25,9 +25,9 @@ struct FishingView: View
                         {
                             Image(nsImage: image)
                                 .resizable()
-                                .frame(width: 64, height: 64)
-                                .padding(.leading, 128)
-                                .padding(.top, 10)
+                                .frame(width: 32, height: 32)
+                                .padding(.leading, 64)
+                                .padding(.top, 5)
                                 .padding(.bottom, 0)
                         }
                     }
@@ -37,7 +37,7 @@ struct FishingView: View
                 }
 
                 HorizontalActionBar(actions: ActionCollections.activityTop)
-                    .padding(.top, 10)
+                    .padding(.top, 5)
             }
 
             HStack
@@ -55,12 +55,12 @@ struct FishingView: View
                 }
 
                 VerticalInventoryBar()
-                    .padding(.trailing, 10)
+                    .padding(.trailing, 5)
             }
 
             // Inventory
             HorizontalActionBar(actions: ActionCollections.fishingBottom)
-                .padding(.bottom, 10)
+                .padding(.bottom, 5)
         }
     }
 

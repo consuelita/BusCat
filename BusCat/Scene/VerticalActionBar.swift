@@ -14,7 +14,7 @@ struct VerticalActionBar: View
 
     var body: some View
     {
-        VStack(spacing: 8)
+        VStack(spacing: 4)
         {
             ForEach($actions.actions.wrappedValue)
             {
@@ -25,17 +25,17 @@ struct VerticalActionBar: View
                     if action.hidden
                     {
                         action.image
-                            .font(.system(size: 60))
+                            .font(.system(size: 30))
                             .hidden()
                     }
                     else
                     {
                         action.image
-                            .font(.system(size: 60))
+                            .font(.system(size: 30))
                     }
                 }
                 .buttonStyle(.plain)
-                .border(.gray, width: 2)
+                .border(.gray, width: 1)
             }
         }
     }

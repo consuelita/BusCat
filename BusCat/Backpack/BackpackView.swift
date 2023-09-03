@@ -20,8 +20,8 @@ struct BackpackView: View
                 Image(systemName: "x.circle")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .font(.system(size: 60))
-                .frame(width: 64, height: 64)
+                .font(.system(size: 30))
+                .frame(width: 32, height: 32)
                 .foregroundColor(.white)
             }
             .buttonStyle(.plain)

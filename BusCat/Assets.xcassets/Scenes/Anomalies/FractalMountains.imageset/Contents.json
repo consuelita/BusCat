@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "FractalMountains.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "FractalMountains.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -16,4 +16,5 @@ public enum SceneType
     case captain
     case astronavigation
     case engineering
+    case cryogenics
 }

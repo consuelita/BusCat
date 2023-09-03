@@ -14,4 +14,6 @@ public enum MainViewSetting
     case backpack
     case fishing
     case shipExterior
+    case shipInterior
+    case cryogenics
 }

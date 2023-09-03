@@ -14,7 +14,7 @@ struct HorizontalActionBar: View
 
     var body: some View
     {
-        HStack(spacing: 8)
+        HStack(spacing: 4)
         {
             ForEach($actions.actions.wrappedValue)
             {
@@ -27,22 +27,23 @@ struct HorizontalActionBar: View
                         action.image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .font(.system(size: 60))
-                        .frame(width: 64, height: 64)
+                        .font(.system(size: 30))
+                        .frame(width: 32, height: 32)
                         .hidden()
                     }
                     else
                     {
                         action.image
+                        .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .font(.system(size: 60))
-                        .frame(width: 64, height: 64)
+                        .font(.system(size: 30))
+                        .frame(width: 32, height: 32)
                         .foregroundColor(.white)
                     }
                 }
                 .buttonStyle(.plain)
-                .border(.gray, width: 2)
+                .border(.gray, width: 1)
             }
         }
     }

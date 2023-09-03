@@ -15,14 +15,16 @@ public struct Waypoint
     public var x: Double
     public var y: Double
     public var scene: WaypointScene
+    public var known: Bool
 
-    public init(type: PointOfInterestType, color: Color, x: Double, y: Double, scene: WaypointScene)
+    public init(type: PointOfInterestType, color: Color, x: Double, y: Double, scene: WaypointScene, known: Bool)
     {
         self.type = type
         self.color = color
         self.x = x
         self.y = y
         self.scene = scene
+        self.known = known
     }
 }
 

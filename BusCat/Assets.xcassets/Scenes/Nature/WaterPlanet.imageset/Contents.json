@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "WaterPlanet.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "WaterPlanet.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

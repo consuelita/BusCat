@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MainScreenView: View
 {
-    @State var galaxy: Galaxy
     @StateObject var state: GameState = GameState()
 
     var body: some View
@@ -24,7 +23,7 @@ struct MainScreenView: View
                 switch $state.currentView.wrappedValue
                 {
                     case .galaxyMap:
-                        GalaxyMapView(galaxy: $galaxy.wrappedValue)
+                        GalaxyMapView(galaxy: $state.galaxy.wrappedValue)
 
                     case .scene:
                         SceneView(scene: $state.scene.wrappedValue)
@@ -37,6 +36,12 @@ struct MainScreenView: View
 
                     case .shipExterior:
                         ShipExteriorView()
+
+                    case .shipInterior:
+                        ShipInteriorView(scene: $state.scene.wrappedValue)
+
+                    case .cryogenics:
+                        CryogenicsMinigameView()
                 }
             }
             .environmentObject(state)
@@ -48,12 +53,6 @@ struct MainScreenView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        let galaxy = Galaxy(map: "GalaxyMap2", waypoints: [
-            Waypoint(type: .star, color: .red, x: 335, y: 337, scene: SceneCollections.star.red),
-            Waypoint(type: .planet, color: .blue, x: 465, y: 500, scene: SceneCollections.planet.nature),
-            Waypoint(type: .anomaly, color: .purple, x: 665, y: 410, scene: SceneCollections.anomaly.rainbow),
-        ])
-
-        MainScreenView(galaxy: galaxy)
+        MainScreenView()
     }
 }

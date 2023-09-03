@@ -34,8 +34,8 @@ struct ItemView: View
                 item.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .font(.system(size: 60))
-                .frame(width: 64, height: 64)
+                .font(.system(size: 32))
+                .frame(width: 32, height: 32)
                 .hidden()
             }
             else if item.count == 1
@@ -43,8 +43,8 @@ struct ItemView: View
                 item.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .font(.system(size: 60))
-                .frame(width: 64, height: 64)
+                .font(.system(size: 30))
+                .frame(width: 32, height: 32)
                 .foregroundColor(.white)
             }
             else
@@ -52,7 +52,7 @@ struct ItemView: View
                 ZStack
                 {
                     item.image
-                    .font(.system(size: 60))
+                    .font(.system(size: 30))
                     .colorInvert()
 
                     Text("\(item.count)")
@@ -60,7 +60,7 @@ struct ItemView: View
             }
         }
         .buttonStyle(.plain)
-        .border(self.borderColor, width: 2)
+        .border(self.borderColor, width: 1)
     }
 }
 

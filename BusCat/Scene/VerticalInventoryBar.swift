@@ -13,7 +13,7 @@ struct VerticalInventoryBar: View
 
     var body: some View
     {
-        VStack(spacing: 8)
+        VStack(spacing: 4)
         {
             HStack
             {
@@ -55,9 +55,9 @@ struct VerticalInventoryBar: View
                     .buttonStyle(.plain)
                 }
             }
-            .font(.system(size: 18))
+            .font(.system(size: 9))
             .foregroundColor(.white)
-            .padding(.bottom, 10)
+            .padding(.bottom, 5)
 
             ForEach($state.backpack.groups[$state.itemGroup.wrappedValue].items.wrappedValue)
             {

@@ -18,6 +18,25 @@
 		DABD81972A7C5E9D00696143 /* FishingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81962A7C5E9D00696143 /* FishingView.swift */; };
 		DABD81992A842BAD00696143 /* ShipMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81982A842BAD00696143 /* ShipMapView.swift */; };
 		DABD819E2A842F5300696143 /* ShipExteriorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD819D2A842F5300696143 /* ShipExteriorView.swift */; };
+		DABD81A02AA0E4DA00696143 /* ShipInteriorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD819F2AA0E4DA00696143 /* ShipInteriorView.swift */; };
+		DABD81A22AA0EB3600696143 /* CryogenicsMinigameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81A12AA0EB3600696143 /* CryogenicsMinigameView.swift */; };
+		DABD81A42AA0F8EB00696143 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81A32AA0F8EB00696143 /* Ability.swift */; };
+		DABD81A62AA0FDC000696143 /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81A52AA0FDC000696143 /* Trait.swift */; };
+		DABD81A82AA1166A00696143 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81A72AA1166A00696143 /* Card.swift */; };
+		DABD81AA2AA116DF00696143 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81A92AA116DF00696143 /* Deck.swift */; };
+		DABD81AC2AA1172400696143 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81AB2AA1172400696143 /* Hand.swift */; };
+		DABD81AF2AA1183D00696143 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81AE2AA1183D00696143 /* Stack.swift */; };
+		DABD81B12AA1185B00696143 /* Pile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81B02AA1185B00696143 /* Pile.swift */; };
+		DABD81B32AA1188C00696143 /* Tableau.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81B22AA1188C00696143 /* Tableau.swift */; };
+		DABD81B62AA1199200696143 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81B52AA1199200696143 /* CardView.swift */; };
+		DABD81B82AA119AE00696143 /* CardSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81B72AA119AE00696143 /* CardSize.swift */; };
+		DABD81BB2AA125F600696143 /* KnownWorldsDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81BA2AA125F600696143 /* KnownWorldsDeck.swift */; };
+		DABD81C42AA14D5C00696143 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81C32AA14D5C00696143 /* StackView.swift */; };
+		DABD81C62AA14FC600696143 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81C52AA14FC600696143 /* DeckView.swift */; };
+		DABD81C82AA186C600696143 /* BackgroundsDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81C72AA186C600696143 /* BackgroundsDeck.swift */; };
+		DABD81CA2AA18DEE00696143 /* ConnectionsDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81C92AA18DEE00696143 /* ConnectionsDeck.swift */; };
+		DABD81CC2AA18DFC00696143 /* ProfessionsDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81CB2AA18DFC00696143 /* ProfessionsDeck.swift */; };
+		DABD81CE2AA2340100696143 /* CryogenicsGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81CD2AA2340100696143 /* CryogenicsGameState.swift */; };
 		DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */; };
 		DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */; };
 		DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */; };
@@ -76,6 +95,25 @@
 		DABD81962A7C5E9D00696143 /* FishingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingView.swift; sourceTree = "<group>"; };
 		DABD81982A842BAD00696143 /* ShipMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipMapView.swift; sourceTree = "<group>"; };
 		DABD819D2A842F5300696143 /* ShipExteriorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipExteriorView.swift; sourceTree = "<group>"; };
+		DABD819F2AA0E4DA00696143 /* ShipInteriorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipInteriorView.swift; sourceTree = "<group>"; };
+		DABD81A12AA0EB3600696143 /* CryogenicsMinigameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryogenicsMinigameView.swift; sourceTree = "<group>"; };
+		DABD81A32AA0F8EB00696143 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		DABD81A52AA0FDC000696143 /* Trait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trait.swift; sourceTree = "<group>"; };
+		DABD81A72AA1166A00696143 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DABD81A92AA116DF00696143 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		DABD81AB2AA1172400696143 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		DABD81AE2AA1183D00696143 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		DABD81B02AA1185B00696143 /* Pile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pile.swift; sourceTree = "<group>"; };
+		DABD81B22AA1188C00696143 /* Tableau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tableau.swift; sourceTree = "<group>"; };
+		DABD81B52AA1199200696143 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DABD81B72AA119AE00696143 /* CardSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSize.swift; sourceTree = "<group>"; };
+		DABD81BA2AA125F600696143 /* KnownWorldsDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownWorldsDeck.swift; sourceTree = "<group>"; };
+		DABD81C32AA14D5C00696143 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		DABD81C52AA14FC600696143 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
+		DABD81C72AA186C600696143 /* BackgroundsDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundsDeck.swift; sourceTree = "<group>"; };
+		DABD81C92AA18DEE00696143 /* ConnectionsDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsDeck.swift; sourceTree = "<group>"; };
+		DABD81CB2AA18DFC00696143 /* ProfessionsDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionsDeck.swift; sourceTree = "<group>"; };
+		DABD81CD2AA2340100696143 /* CryogenicsGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryogenicsGameState.swift; sourceTree = "<group>"; };
 		DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyMapView.swift; sourceTree = "<group>"; };
 		DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointOfInterest.swift; sourceTree = "<group>"; };
 		DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestType.swift; sourceTree = "<group>"; };
@@ -149,6 +187,7 @@
 		AE6F112A2A71EEB300F9DCC2 /* BusCat */ = {
 			isa = PBXGroup;
 			children = (
+				DABD81B42AA1198800696143 /* CardViews */,
 				DAEACEBC2A759D2700D5D587 /* Collections */,
 				DAEACEAC2A731B1000D5D587 /* Models */,
 				DAEACEA22A72102600D5D587 /* MainScreen */,
@@ -193,6 +232,7 @@
 		DABD81952A7C5E8A00696143 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				DABD81BC2AA12EBD00696143 /* Cryogenics */,
 				DABD81962A7C5E9D00696143 /* FishingView.swift */,
 			);
 			path = Activities;
@@ -202,8 +242,54 @@
 			isa = PBXGroup;
 			children = (
 				DABD819D2A842F5300696143 /* ShipExteriorView.swift */,
+				DABD819F2AA0E4DA00696143 /* ShipInteriorView.swift */,
 			);
 			path = Ship;
+			sourceTree = "<group>";
+		};
+		DABD81AD2AA1181D00696143 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				DABD81B92AA125E800696143 /* Decks */,
+				DABD81AB2AA1172400696143 /* Hand.swift */,
+				DABD81A92AA116DF00696143 /* Deck.swift */,
+				DABD81A72AA1166A00696143 /* Card.swift */,
+				DABD81AE2AA1183D00696143 /* Stack.swift */,
+				DABD81B02AA1185B00696143 /* Pile.swift */,
+				DABD81B22AA1188C00696143 /* Tableau.swift */,
+				DABD81B72AA119AE00696143 /* CardSize.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		DABD81B42AA1198800696143 /* CardViews */ = {
+			isa = PBXGroup;
+			children = (
+				DABD81B52AA1199200696143 /* CardView.swift */,
+				DABD81C32AA14D5C00696143 /* StackView.swift */,
+				DABD81C52AA14FC600696143 /* DeckView.swift */,
+			);
+			path = CardViews;
+			sourceTree = "<group>";
+		};
+		DABD81B92AA125E800696143 /* Decks */ = {
+			isa = PBXGroup;
+			children = (
+				DABD81BA2AA125F600696143 /* KnownWorldsDeck.swift */,
+				DABD81C72AA186C600696143 /* BackgroundsDeck.swift */,
+				DABD81C92AA18DEE00696143 /* ConnectionsDeck.swift */,
+				DABD81CB2AA18DFC00696143 /* ProfessionsDeck.swift */,
+			);
+			path = Decks;
+			sourceTree = "<group>";
+		};
+		DABD81BC2AA12EBD00696143 /* Cryogenics */ = {
+			isa = PBXGroup;
+			children = (
+				DABD81A12AA0EB3600696143 /* CryogenicsMinigameView.swift */,
+				DABD81CD2AA2340100696143 /* CryogenicsGameState.swift */,
+			);
+			path = Cryogenics;
 			sourceTree = "<group>";
 		};
 		DAEACE9D2A7209DA00D5D587 /* GalaxyMap */ = {
@@ -239,6 +325,7 @@
 		DAEACEAC2A731B1000D5D587 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DABD81AD2AA1181D00696143 /* Cards */,
 				DAEACEA52A72111700D5D587 /* GameState.swift */,
 				DAEACEAD2A731B1C00D5D587 /* Galaxy.swift */,
 				DAEACEAF2A731B4A00D5D587 /* Waypoint.swift */,
@@ -251,6 +338,8 @@
 				DAEACEC52A77033100D5D587 /* Item.swift */,
 				DAEACECA2A77075D00D5D587 /* ItemGroup.swift */,
 				DA86421B2A7876CB0093F858 /* WaypointScene.swift */,
+				DABD81A32AA0F8EB00696143 /* Ability.swift */,
+				DABD81A52AA0FDC000696143 /* Trait.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -410,26 +499,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAEACECD2A77151000D5D587 /* VerticalInventoryBar.swift in Sources */,
+				DABD81B12AA1185B00696143 /* Pile.swift in Sources */,
+				DABD81B32AA1188C00696143 /* Tableau.swift in Sources */,
 				DABD81972A7C5E9D00696143 /* FishingView.swift in Sources */,
 				DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */,
 				DABD819E2A842F5300696143 /* ShipExteriorView.swift in Sources */,
+				DABD81B82AA119AE00696143 /* CardSize.swift in Sources */,
 				DA86421C2A7876CB0093F858 /* WaypointScene.swift in Sources */,
+				DABD81B62AA1199200696143 /* CardView.swift in Sources */,
 				AE6F112C2A71EEB300F9DCC2 /* BusCatApp.swift in Sources */,
 				DAEACEC02A75A8FD00D5D587 /* VerticalActionBar.swift in Sources */,
+				DABD81A22AA0EB3600696143 /* CryogenicsMinigameView.swift in Sources */,
+				DABD81CC2AA18DFC00696143 /* ProfessionsDeck.swift in Sources */,
+				DABD81C62AA14FC600696143 /* DeckView.swift in Sources */,
 				DAEACEB02A731B4A00D5D587 /* Waypoint.swift in Sources */,
+				DABD81CE2AA2340100696143 /* CryogenicsGameState.swift in Sources */,
+				DABD81BB2AA125F600696143 /* KnownWorldsDeck.swift in Sources */,
 				DAEACEA12A72100100D5D587 /* MainScreenView.swift in Sources */,
+				DABD81A82AA1166A00696143 /* Card.swift in Sources */,
+				DABD81AC2AA1172400696143 /* Hand.swift in Sources */,
+				DABD81A62AA0FDC000696143 /* Trait.swift in Sources */,
 				DAEACEAE2A731B1C00D5D587 /* Galaxy.swift in Sources */,
+				DABD81A42AA0F8EB00696143 /* Ability.swift in Sources */,
+				DABD81AA2AA116DF00696143 /* Deck.swift in Sources */,
 				DAEACEA92A72145000D5D587 /* SceneView.swift in Sources */,
 				DAEACECF2A771BF900D5D587 /* ItemView.swift in Sources */,
 				DAEACEC42A77021F00D5D587 /* Backpack.swift in Sources */,
 				DAEACEC92A7705D700D5D587 /* BackpackView.swift in Sources */,
+				DABD81CA2AA18DEE00696143 /* ConnectionsDeck.swift in Sources */,
+				DABD81C82AA186C600696143 /* BackgroundsDeck.swift in Sources */,
 				DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */,
 				DAEACEB72A759AD800D5D587 /* HorizontalActionBar.swift in Sources */,
 				DAEACEA42A72104300D5D587 /* MainViewSetting.swift in Sources */,
 				DA86421A2A78757F0093F858 /* SceneCollections.swift in Sources */,
+				DABD81C42AA14D5C00696143 /* StackView.swift in Sources */,
 				DAEACEAB2A721AB800D5D587 /* SceneType.swift in Sources */,
 				DAEACEA62A72111700D5D587 /* GameState.swift in Sources */,
 				DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */,
+				DABD81A02AA0E4DA00696143 /* ShipInteriorView.swift in Sources */,
+				DABD81AF2AA1183D00696143 /* Stack.swift in Sources */,
 				DAEACEC62A77033100D5D587 /* Item.swift in Sources */,
 				DAEACEB52A734D0D00D5D587 /* GridCell.swift in Sources */,
 				DAEACECB2A77075D00D5D587 /* ItemGroup.swift in Sources */,

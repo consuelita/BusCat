@@ -19,7 +19,7 @@ struct ShipMapView: View
             {
                 Image(nsImage: image)
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: 25, height: 25)
             }
         }
         .position(CGPoint(x: $state.shipPosition.x.wrappedValue, y: $state.shipPosition.y.wrappedValue))

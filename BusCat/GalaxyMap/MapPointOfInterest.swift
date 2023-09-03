@@ -17,7 +17,7 @@ struct MapPointOfInterest: View
         Button(action: self.clicked)
         {
             Image(systemName: $waypoint.type.wrappedValue.rawValue)
-            .font(.system(size: 30))
+            .font(.system(size: 15))
             .foregroundColor($waypoint.color.wrappedValue)
         }
         .position(CGPoint(x: $waypoint.x.wrappedValue, y: $waypoint.y.wrappedValue))
@@ -36,7 +36,7 @@ struct MapPointOfInterest_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        let waypoint = Waypoint(type: .star, color: .red, x: 335, y: 337, scene: SceneCollections.star.red)
+        let waypoint = Waypoint(type: .star, color: .red, x: 167, y: 168, scene: SceneCollections.star.red, known: true)
         MapPointOfInterest(waypoint: waypoint)
     }
 }

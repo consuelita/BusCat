@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Astronavigation.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Astronavigation.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

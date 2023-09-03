@@ -40,6 +40,17 @@ extension ActionCollections
         Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
     ])
 
+    static public let shipBottom = ActionCollection(actions: [
+        Action(name: "console", imageName: "gamecontroller", hidden: false, callback: Self.cryogenics),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+        Action(name: "nothing", imageName: "circle.slash", hidden: true, callback: Self.nothing),
+    ])
+
     static public let activityTop = ActionCollection(actions: [
         Action(name: "starmap", imageName: "map", callback: Self.starmap),
         Action(name: "backpack", imageName: "backpack", hidden: false, callback: Self.backpack),
@@ -68,6 +79,14 @@ extension ActionCollections
     static public func scene(_ state: GameState)
     {
         state.currentView = .scene
+    }
+
+    static public func cryogenics(_ state: GameState)
+    {
+        state.backView = state.currentView
+        state.backScene = state.scene
+
+        state.currentView = .cryogenics
     }
 }
 
@@ -98,6 +117,12 @@ extension ActionCollections
 
     static public func fishing(_ state: GameState)
     {
+        guard state.scene.type == .planet else
+        {
+            print("You can't fish here!")
+            return
+        }
+
         state.currentView = .fishing
     }
 
