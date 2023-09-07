@@ -37,6 +37,7 @@
 		DABD81CA2AA18DEE00696143 /* ConnectionsDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81C92AA18DEE00696143 /* ConnectionsDeck.swift */; };
 		DABD81CC2AA18DFC00696143 /* ProfessionsDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81CB2AA18DFC00696143 /* ProfessionsDeck.swift */; };
 		DABD81CE2AA2340100696143 /* CryogenicsGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81CD2AA2340100696143 /* CryogenicsGameState.swift */; };
+		DABD81D12AA9799700696143 /* WhiteRiver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DABD81D02AA9799700696143 /* WhiteRiver.mp3 */; };
 		DAEACE9A2A71F03F00D5D587 /* GalaxyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */; };
 		DAEACE9C2A7209B400D5D587 /* MapPointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */; };
 		DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */; };
@@ -114,6 +115,7 @@
 		DABD81C92AA18DEE00696143 /* ConnectionsDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsDeck.swift; sourceTree = "<group>"; };
 		DABD81CB2AA18DFC00696143 /* ProfessionsDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionsDeck.swift; sourceTree = "<group>"; };
 		DABD81CD2AA2340100696143 /* CryogenicsGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryogenicsGameState.swift; sourceTree = "<group>"; };
+		DABD81D02AA9799700696143 /* WhiteRiver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WhiteRiver.mp3; sourceTree = "<group>"; };
 		DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyMapView.swift; sourceTree = "<group>"; };
 		DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointOfInterest.swift; sourceTree = "<group>"; };
 		DAEACE9E2A7209F800D5D587 /* PointOfInterestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestType.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		AE6F112A2A71EEB300F9DCC2 /* BusCat */ = {
 			isa = PBXGroup;
 			children = (
+				DABD81CF2AA9795B00696143 /* Resources */,
 				DABD81B42AA1198800696143 /* CardViews */,
 				DAEACEBC2A759D2700D5D587 /* Collections */,
 				DAEACEAC2A731B1000D5D587 /* Models */,
@@ -290,6 +293,14 @@
 				DABD81CD2AA2340100696143 /* CryogenicsGameState.swift */,
 			);
 			path = Cryogenics;
+			sourceTree = "<group>";
+		};
+		DABD81CF2AA9795B00696143 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DABD81D02AA9799700696143 /* WhiteRiver.mp3 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		DAEACE9D2A7209DA00D5D587 /* GalaxyMap */ = {
@@ -472,6 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABD81D12AA9799700696143 /* WhiteRiver.mp3 in Resources */,
 				AE6F11332A71EEB300F9DCC2 /* Preview Assets.xcassets in Resources */,
 				AE6F11302A71EEB300F9DCC2 /* Assets.xcassets in Resources */,
 			);

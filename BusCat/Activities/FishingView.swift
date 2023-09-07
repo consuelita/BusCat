@@ -5,12 +5,14 @@
 //  Created by Dr. Brandon Wiley on 8/3/23.
 //
 
+import AVKit
 import SwiftUI
 
 struct FishingView: View
 {
     @EnvironmentObject var state: GameState
-
+    @State var audioPlayer: AVAudioPlayer? = nil
+    
     var body: some View
     {
         VStack
@@ -62,11 +64,25 @@ struct FishingView: View
             HorizontalActionBar(actions: ActionCollections.fishingBottom)
                 .padding(.bottom, 5)
         }
+        .onAppear(perform: self.playSoundtrack)
     }
 
     public func sceneClicked()
     {
         state.currentView = .scene
+    }
+
+    func playSoundtrack()
+    {
+        if let sound = Bundle.main.path(forResource: "WhiteRiver", ofType: "mp3")
+        {
+            if let audioPlayer = try? AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound))
+            {
+                audioPlayer.numberOfLoops = 100
+                audioPlayer.play()
+                self.audioPlayer = audioPlayer
+            }
+        }
     }
 }
 

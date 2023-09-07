@@ -31,6 +31,11 @@ struct CryogenicsMinigameView: View
     @State var background3: Card? = nil
     @State var background4: Card? = nil
 
+    @State var profession1: Card? = nil
+    @State var profession2: Card? = nil
+    @State var profession3: Card? = nil
+    @State var profession4: Card? = nil
+
     let scaleFactor: CGFloat = 2
     let cardPadding: CGFloat = 10
     let defaultSize: CardSize = .poker
@@ -685,7 +690,235 @@ struct CryogenicsMinigameView: View
 
     var professionsView: some View
     {
-        Text("Professions")
+        VStack
+        {
+            Text("Choose a Profession")
+                .foregroundColor(.accentColor)
+                .font(.title)
+
+            ZStack
+            {
+                HStack
+                {
+                    Button(action: self.sceneClicked)
+                    {
+                        if let image = NSImage(named: NSImage.Name(state.scene.imageName))
+                        {
+                            Image(nsImage: image)
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .padding(.leading, 64)
+                                .padding(.top, 5)
+                                .padding(.bottom, 0)
+                        }
+                    }
+                    .buttonStyle(.plain)
+
+                    Button(action: self.minigameClicked)
+                    {
+                        if let image = NSImage(named: NSImage.Name("CryogenicsMinigame"))
+                        {
+                            Image(nsImage: image)
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .padding(.leading, 8)
+                                .padding(.top, 5)
+                                .padding(.bottom, 0)
+                        }
+                    }
+                    .buttonStyle(.plain)
+
+                    Spacer()
+                }
+
+                HorizontalActionBar(actions: ActionCollections.activityTop)
+                    .padding(.top, 5)
+            }
+            .padding()
+
+            ZStack
+            {
+                if let image = NSImage(named: NSImage.Name("Professions"))
+                {
+                    Image(nsImage: image)
+                }
+
+                HStack
+                {
+                    VStack
+                    {
+                        HStack
+                        {
+                            VStack
+                            {
+                                if let profession1 = self.profession1
+                                {
+                                    Text(profession1.name)
+                                        .foregroundColor(.red)
+                                        .shadow(color: .black, radius: 1)
+
+                                    Button(action: self.profession1Clicked)
+                                    {
+                                        CardView(card: profession1, scaleFactor: self.scaleFactor)
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                                else
+                                {
+                                    Text("")
+
+                                    Rectangle().frame(width: self.defaultSize.width * self.scaleFactor, height: self.defaultSize.height * self.scaleFactor)
+                                }
+                            }
+                            .padding(.leading, self.cardPadding / 2)
+                            .padding(.trailing, self.cardPadding)
+
+                            VStack
+                            {
+                                if let profession2 = self.background2
+                                {
+                                    Text(profession2.name)
+                                        .foregroundColor(.red)
+                                        .shadow(color: .black, radius: 1)
+
+                                    Button(action: self.profession2Clicked)
+                                    {
+                                        CardView(card: profession2, scaleFactor: self.scaleFactor)
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                                else
+                                {
+                                    Text("")
+
+                                    Rectangle().frame(width: self.defaultSize.width * self.scaleFactor, height: self.defaultSize.height * self.scaleFactor)
+                                }
+                            }
+                            .padding(.leading, self.cardPadding)
+                            .padding(.trailing, self.cardPadding / 2)
+
+                            VStack
+                            {
+                                Text("Abilities")
+                                    .foregroundColor(.red)
+                                    .shadow(color: .black, radius: 1)
+
+                                VStack
+                                {
+                                    if abilities.isEmpty
+                                    {
+                                        Text("None")
+                                            .foregroundColor(.red)
+                                            .shadow(color: .black, radius: 1)
+                                    }
+                                    else
+                                    {
+                                        ForEach($abilities, id: \.self)
+                                        {
+                                            ability in
+
+                                            let type: String = ability.wrappedValue.type.rawValue
+                                            let level = ability.wrappedValue.level.description
+                                            Text("\(level) \(type)")
+                                                .foregroundColor(.red)
+                                                .shadow(color: .black, radius: 1)
+                                        }
+                                    }
+
+                                    Spacer()
+                                }
+                                .frame(width: self.defaultSize.width * self.scaleFactor, height: self.defaultSize.height * self.scaleFactor)
+                            }
+                        }
+
+                        HStack
+                        {
+                            VStack
+                            {
+                                if let profession3 = self.profession3
+                                {
+                                    Text(profession3.name)
+                                        .foregroundColor(.red)
+                                        .shadow(color: .black, radius: 1)
+
+                                    Button(action: self.profession3Clicked)
+                                    {
+                                        CardView(card: profession3, scaleFactor: self.scaleFactor)
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                                else
+                                {
+                                    Text("")
+
+                                    Rectangle().frame(width: self.defaultSize.width * self.scaleFactor, height: self.defaultSize.height * self.scaleFactor)
+                                }
+                            }
+                            .padding(.leading, self.cardPadding / 2)
+                            .padding(.trailing, self.cardPadding)
+
+                            VStack
+                            {
+                                if let profession4 = self.profession4
+                                {
+                                    Text(profession4.name)
+                                        .foregroundColor(.red)
+                                        .shadow(color: .black, radius: 1)
+
+                                    Button(action: self.profession4Clicked)
+                                    {
+                                        CardView(card: profession4, scaleFactor: self.scaleFactor)
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                                else
+                                {
+                                    Text("")
+
+                                    Rectangle().frame(width: self.defaultSize.width * self.scaleFactor, height: self.defaultSize.height * self.scaleFactor)
+                                }
+                            }
+                            .padding(.leading, self.cardPadding)
+                            .padding(.trailing, self.cardPadding / 2)
+
+                            VStack
+                            {
+                                Text("Traits")
+                                    .foregroundColor(.red)
+                                    .shadow(color: .black, radius: 1)
+
+                                VStack
+                                {
+                                    if traits.isEmpty
+                                    {
+                                        Text("None")
+                                            .foregroundColor(.red)
+                                            .shadow(color: .black, radius: 1)
+                                    }
+                                    else
+                                    {
+                                        ForEach($traits, id: \.self)
+                                        {
+                                            trait in
+
+                                            Text(trait.wrappedValue.description)
+                                                .shadow(color: .black, radius: 1)
+                                        }
+                                    }
+
+                                    Spacer()
+                                }
+                                .foregroundColor(.red)
+                                .frame(width: self.defaultSize.width * self.scaleFactor, height: self.defaultSize.height * self.scaleFactor)
+                            }
+                        }
+                    }
+                }
+                .foregroundColor(.primary)
+                .font(.headline)
+            }
+        }
+        .onAppear(perform: self.initializeProfessions)
     }
 
     var connectionsView: some View
@@ -722,6 +955,14 @@ struct CryogenicsMinigameView: View
         self.background2 = try? self.backgrounds.draw(turnFaceUp: true)
         self.background3 = try? self.backgrounds.draw(turnFaceUp: true)
         self.background4 = try? self.backgrounds.draw(turnFaceUp: true)
+    }
+
+    public func initializeProfessions()
+    {
+        self.profession1 = try? self.professions.draw(turnFaceUp: true)
+        self.profession2 = try? self.professions.draw(turnFaceUp: true)
+        self.profession3 = try? self.professions.draw(turnFaceUp: true)
+        self.profession4 = try? self.professions.draw(turnFaceUp: true)
     }
 
     public func minigameClicked()
@@ -940,6 +1181,105 @@ struct CryogenicsMinigameView: View
     public func professionsClicked()
     {
         self.minigameState.subview = .professions
+    }
+
+    public func profession1Clicked()
+    {
+        if let profession = self.profession1
+        {
+            if let selectedCard = self.state.selectedCard
+            {
+                if selectedCard == profession.identifier
+                {
+                    self.state.selectedCard = nil
+                    abilities = []
+                    traits = []
+                    return
+                }
+            }
+
+            self.selectProfession(profession)
+        }
+    }
+
+    public func profession2Clicked()
+    {
+        if let profession = self.profession2
+        {
+            if let selectedCard = self.state.selectedCard
+            {
+                if selectedCard == profession.identifier
+                {
+                    self.state.selectedCard = nil
+                    abilities = []
+                    traits = []
+                    return
+                }
+            }
+
+            self.selectProfession(profession)
+        }
+    }
+
+    public func profession3Clicked()
+    {
+        if let profession = self.profession3
+        {
+            if let selectedCard = self.state.selectedCard
+            {
+                if selectedCard == profession.identifier
+                {
+                    self.state.selectedCard = nil
+                    abilities = []
+                    traits = []
+                    return
+                }
+            }
+
+            self.selectProfession(profession)
+        }
+    }
+
+    public func profession4Clicked()
+    {
+        if let profession = self.profession4
+        {
+            if let selectedCard = self.state.selectedCard
+            {
+                if selectedCard == profession.identifier
+                {
+                    self.state.selectedCard = nil
+                    abilities = []
+                    traits = []
+                    return
+                }
+            }
+
+            self.selectProfession(profession)
+        }
+    }
+
+    func selectProfession(_ card: Card)
+    {
+        self.state.selectedCard = card.identifier
+
+        let maybeProfession = Profession.professions.first
+        {
+            profession in
+
+            profession.name == card.name
+        }
+
+        if let profession = maybeProfession
+        {
+            abilities = profession.abilities
+            traits = profession.traits
+        }
+        else
+        {
+            abilities = []
+            traits = []
+        }
     }
 
     public func connectionsClicked()

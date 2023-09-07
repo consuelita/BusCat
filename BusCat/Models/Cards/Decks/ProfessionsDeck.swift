@@ -17,8 +17,15 @@ public struct Profession
                 Ability(type: .fishing, level: .basic)
             ],
             traits: [
-                Trait(description: "Surly"),
                 Trait(description: "Nature Lover"),
+            ]
+        ),
+        Profession(
+            name: "Trader",
+            abilities: [
+                Ability(type: .negotiation, level: .basic)
+            ],
+            traits: [
             ]
         )
     ]
