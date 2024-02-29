@@ -66,9 +66,11 @@ struct FishingView: View
         }
         .onAppear(perform: self.playSoundtrack)
     }
-
+    
+    // TODO: This should call fishingActivity()
     public func sceneClicked()
     {
+        // TODO: Change cursor to show that we are fishing!
         state.currentView = .scene
     }
 

@@ -129,22 +129,42 @@ extension ActionCollections
     static public func fishingActivity(_ state: GameState)
     {
         print("fishing \(state.scene.type)")
+        
+        // TODO: Check if user has the fishing skill before allowing them to fish
+    
 
         guard state.scene.type == .planet else
         {
             print("You can't fish here!")
             return
         }
-
-        guard let index = state.backpack.groups[state.itemGroup].findEmptySpace() else
+        
+        // TODO: First see if we can add this to an existing stack of the same item (item count)
+        // TODO: Otherwise, iterate through all available item groups until we find one that has an empty space
+        // TODO: Display the correct column in the UI as well
+//        guard let index = state.backpack.groups[state.itemGroup].findEmptySpace() else
+//        {
+//            print("no free backpack slots")
+//            return
+//        }
+//
+//        print("fish -> (\(state.itemGroup), \(index))")
+//        state.backpack.groups[state.itemGroup].items[index] = Item.fish
+        
+        // TODO: Handle when item can't be stored (no space!)
+        // TODO: Have try to store return which group the item is stored in so that we can display it
+        let itemStored = state.backpack.tryToStore(item: Item.fish)
+        
+        if itemStored
         {
-            print("no free backpack slots")
-            return
+            print("🐠 Stored a fish!!")
         }
-
-        print("fish -> (\(state.itemGroup), \(index))")
-        state.backpack.groups[state.itemGroup].items[index] = Item.fish
-        state.objectWillChange.send() // FIXME - This is a hack, there should be a way to get around doing this explictly.
+        else
+        {
+            print("🐠🚫 Did NOT store a fish!!")
+        }
+        
+        state.objectWillChange.send() // FIXME - This is a hack, there should be a way to get around doing this explicitly.
     }
 }
 

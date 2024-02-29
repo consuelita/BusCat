@@ -59,6 +59,34 @@ public class ItemGroup: ObservableObject
             partialResult && item.name == firstItem.name
         }
     }
+    
+    public func findItemIndexes(item itemToFind: Item) -> [Int]
+    {
+        var itemIndexes = [Int]()
+        
+        for (index, item) in self.items.enumerated()
+        {
+            if item.name == itemToFind.name
+            {
+                itemIndexes.append(index)
+            }
+        }
+        
+        return itemIndexes
+    }
+    
+    public func findItemStackWithSpace(item itemToFind: Item) -> Int?
+    {
+        let availableStack = findItemIndexes(item: itemToFind).first
+        {
+            itemIndex in
+            
+            let currentItem = self.items[itemIndex]
+            return currentItem.count < currentItem.maxStackSize
+        }
+        
+        return availableStack
+    }
 
     public func findEmptySpace() -> Int?
     {
@@ -72,6 +100,8 @@ public class ItemGroup: ObservableObject
 
         return nil
     }
+    
+    // TODO: Stack item or add it to an empty space
 }
 
 extension ItemGroup: Identifiable

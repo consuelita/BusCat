@@ -35,7 +35,8 @@ public struct Item
 
     public let name: String
     public let image: Image
-    public let count: Int
+    public var count: Int
+    public let maxStackSize: Int = 10
     public let callback: (GameState) -> Void
     public let hidden: Bool
 
