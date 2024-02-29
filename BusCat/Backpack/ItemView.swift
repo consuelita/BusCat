@@ -49,13 +49,27 @@ struct ItemView: View
             }
             else
             {
-                ZStack
+                item.image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .font(.system(size: 30))
+                .frame(width: 32, height: 32)
+                .colorInvert()
+                .overlay(alignment: .bottom)
                 {
                     item.image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                     .font(.system(size: 30))
-                    .colorInvert()
-
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.white)
+                }
+                .overlay(alignment: .topLeading)
+                {
                     Text("\(item.count)")
+                    .font(.system(size: 12))
+                    .background(.clear)
+                    .foregroundColor(.white)
                 }
             }
         }
@@ -63,6 +77,8 @@ struct ItemView: View
         .border(self.borderColor, width: 1)
     }
 }
+
+
 
 struct ItemView_Previews: PreviewProvider
 {

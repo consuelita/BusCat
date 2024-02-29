@@ -69,7 +69,7 @@ public struct Backpack
                 return (groupIndex, availableSlotIndex)
             }.first
             
-            if let (availableGroupIndex, emptyItemSlotIndex) = maybeAvailableSpace
+            if let (availableGroupIndex, emptyItemSlotIndex) = maybeEmptySpace
             {
                 // We found an empty space, add the item to the empty space
                 self.groups[availableGroupIndex].items[emptyItemSlotIndex] = item
