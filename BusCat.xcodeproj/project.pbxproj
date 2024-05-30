@@ -15,6 +15,8 @@
 		AE6F114A2A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */; };
 		DA86421A2A78757F0093F858 /* SceneCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8642192A78757F0093F858 /* SceneCollections.swift */; };
 		DA86421C2A7876CB0093F858 /* WaypointScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86421B2A7876CB0093F858 /* WaypointScene.swift */; };
+		DA89FC2B2C07EFD3006ADD48 /* HexGrid in Frameworks */ = {isa = PBXBuildFile; productRef = DA89FC2A2C07EFD3006ADD48 /* HexGrid */; };
+		DA89FC2D2C07F008006ADD48 /* HexGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89FC2C2C07F008006ADD48 /* HexGridCell.swift */; };
 		DABD81972A7C5E9D00696143 /* FishingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81962A7C5E9D00696143 /* FishingView.swift */; };
 		DABD81992A842BAD00696143 /* ShipMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD81982A842BAD00696143 /* ShipMapView.swift */; };
 		DABD819E2A842F5300696143 /* ShipExteriorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD819D2A842F5300696143 /* ShipExteriorView.swift */; };
@@ -93,6 +95,7 @@
 		AE6F11492A71EEB400F9DCC2 /* BusCatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA8642192A78757F0093F858 /* SceneCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCollections.swift; sourceTree = "<group>"; };
 		DA86421B2A7876CB0093F858 /* WaypointScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointScene.swift; sourceTree = "<group>"; };
+		DA89FC2C2C07F008006ADD48 /* HexGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexGridCell.swift; sourceTree = "<group>"; };
 		DABD81962A7C5E9D00696143 /* FishingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingView.swift; sourceTree = "<group>"; };
 		DABD81982A842BAD00696143 /* ShipMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipMapView.swift; sourceTree = "<group>"; };
 		DABD819D2A842F5300696143 /* ShipExteriorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipExteriorView.swift; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA89FC2B2C07EFD3006ADD48 /* HexGrid in Frameworks */,
 				DAEACEB32A734C1B00D5D587 /* Grid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				DAEACE992A71F03F00D5D587 /* GalaxyMapView.swift */,
+				DA89FC2C2C07F008006ADD48 /* HexGridCell.swift */,
 				DABD81982A842BAD00696143 /* ShipMapView.swift */,
 				DAEACE9B2A7209B400D5D587 /* MapPointOfInterest.swift */,
 			);
@@ -391,6 +396,7 @@
 			name = BusCat;
 			packageProductDependencies = (
 				DAEACEB22A734C1B00D5D587 /* Grid */,
+				DA89FC2A2C07EFD3006ADD48 /* HexGrid */,
 			);
 			productName = BusCat;
 			productReference = AE6F11282A71EEB300F9DCC2 /* BusCat.app */;
@@ -440,7 +446,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					AE6F11272A71EEB300F9DCC2 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -466,6 +472,7 @@
 			mainGroup = AE6F111F2A71EEB200F9DCC2;
 			packageReferences = (
 				DAEACEB12A734C1B00D5D587 /* XCRemoteSwiftPackageReference "swiftui-grid" */,
+				DA89FC292C07EFD3006ADD48 /* XCRemoteSwiftPackageReference "HexGrid" */,
 			);
 			productRefGroup = AE6F11292A71EEB300F9DCC2 /* Products */;
 			projectDirPath = "";
@@ -549,6 +556,7 @@
 				DAEACEA62A72111700D5D587 /* GameState.swift in Sources */,
 				DAEACE9F2A7209F800D5D587 /* PointOfInterestType.swift in Sources */,
 				DABD81A02AA0E4DA00696143 /* ShipInteriorView.swift in Sources */,
+				DA89FC2D2C07F008006ADD48 /* HexGridCell.swift in Sources */,
 				DABD81AF2AA1183D00696143 /* Stack.swift in Sources */,
 				DAEACEC62A77033100D5D587 /* Item.swift in Sources */,
 				DAEACEB52A734D0D00D5D587 /* GridCell.swift in Sources */,
@@ -626,9 +634,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -643,7 +653,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -686,9 +696,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -697,7 +709,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -715,6 +727,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BusCat/Preview Content\"";
 				DEVELOPMENT_TEAM = E3FYURAR8H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -742,6 +755,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BusCat/Preview Content\"";
 				DEVELOPMENT_TEAM = E3FYURAR8H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -767,6 +781,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FR7LB94RGE;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -786,6 +801,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FR7LB94RGE;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -804,6 +820,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FR7LB94RGE;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -821,6 +838,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FR7LB94RGE;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -874,6 +892,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DA89FC292C07EFD3006ADD48 /* XCRemoteSwiftPackageReference "HexGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ksemianov/HexGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
 		DAEACEB12A734C1B00D5D587 /* XCRemoteSwiftPackageReference "swiftui-grid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/spacenation/swiftui-grid.git";
@@ -885,6 +911,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA89FC2A2C07EFD3006ADD48 /* HexGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA89FC292C07EFD3006ADD48 /* XCRemoteSwiftPackageReference "HexGrid" */;
+			productName = HexGrid;
+		};
 		DAEACEB22A734C1B00D5D587 /* Grid */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DAEACEB12A734C1B00D5D587 /* XCRemoteSwiftPackageReference "swiftui-grid" */;
